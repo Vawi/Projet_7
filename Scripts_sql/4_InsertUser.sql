@@ -1,0 +1,37 @@
+INSERT INTO public.utilisateur (
+  nom,
+  prenom,
+  mail,
+  mot_de_passe
+)
+VALUES
+(
+  'tutu',
+  'Toto',
+  'toto.tutu@gmail.com',
+  'totoTutu'
+),
+(
+  'Du chateau',
+  'Alvin',
+  'Al77@lapost.net',
+  'alouichateau'
+),
+(
+  'Merguez',
+  'Daniel',
+  'Daniel.merguez@orange.fr',
+  'SuperSaucisse'
+),
+(
+  'Cachou',
+  'Tati',
+  'tatiCach@gmail.com',
+  'chouchou32'
+),
+(
+  'nomTest',
+  'prenomTest',
+  'mail.test@orange.fr',
+  'mdptest'
+)
