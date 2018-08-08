@@ -31,7 +31,7 @@
     <module>Projet_7_consumer</module>
     <module>Projet_7_business</module>
     <module>Projet_7_model</module>
-      <module>Projet_7_service</module>
+    <module>Projet_7_service</module>
   </modules>
 
 
