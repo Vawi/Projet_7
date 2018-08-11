@@ -22,7 +22,7 @@ public class EmpruntService {
 
     @WebMethod
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage){
-        
+        managerFactory.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
     }
 
 }
