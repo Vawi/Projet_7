@@ -33,6 +33,11 @@ public class Utilisateur {
      */
     private String mail;
 
+    /**
+     * pseudonyme de l'utilisateur
+     */
+    private String pseudonyme;
+
 
 
     // ==================== Constructeurs ====================
@@ -136,7 +141,21 @@ public class Utilisateur {
         mdp = pMdp;
     }
 
+    /**
+     * recuperer le mot de passe de l'utilisateur
+     * @return le pseudonyme de l'utilisateur
+     */
+    public String getPseudonyme() {
+        return pseudonyme;
+    }
 
+    /**
+     * modifier le mot de passe de l'utilisateur
+     * @param pseudonyme le pseudonyme
+     */
+    public void setPseudonyme(String pseudonyme) {
+        this.pseudonyme = pseudonyme;
+    }
 
     // ==================== Méthodes ====================
 

@@ -34,18 +34,18 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
 
     /**
      * recuperer un utilisateur en fonction de ces identifiants
-     * @param pPrenom prenom de l'utilisateur
+     * @param pPseudonyme pseudonyme de l'utilisateur
      * @param pPassword mot de passe de l'utilisateur
      * @throws NotFoundException en cas d'utilisateur non trouvé
      * @return un utilisateur
      */
     @Override
-    public Utilisateur getUtilisateur(String pPrenom, String pPassword) throws NotFoundException {
+    public Utilisateur getUtilisateur(String pPseudonyme, String pPassword) throws NotFoundException {
 
         List<Utilisateur> listUtilisateur = this.getListUtilisateur();
         Utilisateur vUtilisateur
                 = listUtilisateur.stream()
-                .filter(p -> p.getPrenom().equals(pPrenom))
+                .filter(p -> p.getPrenom().equals(pPseudonyme))
                 .filter(p -> p.getMotDePasse().equals(pPassword))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Aucun utilisateur correspondant au couple prenom/password fourni."));

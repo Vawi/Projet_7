@@ -28,6 +28,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 vUtilisateur.setPrenom(pRS.getString("prenom"));
                 vUtilisateur.setMail(pRS.getString("mail"));
                 vUtilisateur.setMotDePasse(pRS.getString("mot_de_passe"));
+                vUtilisateur.setPseudonyme(pRS.getString("pseudonyme"));
                 return vUtilisateur;
             }
         };
