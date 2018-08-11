@@ -34,7 +34,4 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
 
         return vListOuvrage;
     }
-
-
-
 }

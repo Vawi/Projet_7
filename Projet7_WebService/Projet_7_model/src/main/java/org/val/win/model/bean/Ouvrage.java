@@ -42,7 +42,7 @@ public class Ouvrage {
      * constructeur
      * @param pId l'id d'un ouvrage
      */
-    public Ouvrage(Integer pId){
+    public Ouvrage(final Integer pId){
         idOuvrage = pId;
     }
 
@@ -54,7 +54,7 @@ public class Ouvrage {
      * setter de l'id d'un ouvrage
      * @param pId l'id d'un ouvrage
      */
-    public void setIdOuvrage(Integer pId) {
+    public void setIdOuvrage(final Integer pId) {
         idOuvrage = pId;
     }
 
@@ -70,7 +70,7 @@ public class Ouvrage {
      * setter de l'auteur d'un ouvrage
      * @param auteur l'auteur d'un ouvrage
      */
-    public void setAuteur(String auteur) {
+    public void setAuteur(final String auteur) {
         this.auteur = auteur;
     }
 
@@ -86,7 +86,7 @@ public class Ouvrage {
      * setter du nombre d'exemplaire disponible d'un ouvrage
      * @param nombreDispo le nombre d'exemplaire dispo
      */
-    public void setNombreDispo(Integer nombreDispo) {
+    public void setNombreDispo(final Integer nombreDispo) {
         this.nombreDispo = nombreDispo;
     }
 
@@ -102,7 +102,7 @@ public class Ouvrage {
      * setter du nom d'un ouvrage
      * @param nomOuvrage le nom de l'ouvrage
      */
-    public void setNomOuvrage(String nomOuvrage) {
+    public void setNomOuvrage(final String nomOuvrage) {
         this.nomOuvrage = nomOuvrage;
     }
 

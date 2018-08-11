@@ -7,7 +7,7 @@ import org.junit.Test;
 public class UtilisateurImplTest {
 
     @Test
-    public final void testGetUtilisayeur() {
+    public final void getUtilisateurTest() {
 
     }
 

@@ -23,7 +23,7 @@ public class UtilisateurService {
     private Utilisateur utilisateur;
 
     @WebMethod
-    public Utilisateur utilisateurLogin (final String pseudonyme, final String mdp) {
+    public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) {
         try {
             utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(pseudonyme, mdp);
         } catch (NotFoundException pEx) {

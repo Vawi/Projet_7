@@ -53,7 +53,7 @@ public class Utilisateur {
      *
      * @param pId -
      */
-    public Utilisateur(Integer pId) {
+    public Utilisateur(final Integer pId) {
         idUtilisateur = pId;
     }
 
@@ -65,7 +65,7 @@ public class Utilisateur {
      * modifier l'id de l'utilisateur
      * @param pId nouvel id
      */
-    public void setIdUtilisateur(Integer pId) {
+    public void setIdUtilisateur(final Integer pId) {
         idUtilisateur = pId;
     }
 
@@ -89,7 +89,7 @@ public class Utilisateur {
      * recuperer le prenom de l'utilisateur
      * @param pNom le nouveau nom
      */
-    public void setNom(String pNom) {
+    public void setNom(final String pNom) {
         nom = pNom;
     }
 
@@ -105,7 +105,7 @@ public class Utilisateur {
      * modifier le prenom de l'utilisateur
      * @param pPrenom le nouveau prenom
      */
-    public void setPrenom(String pPrenom) {
+    public void setPrenom(final String pPrenom) {
         prenom = pPrenom;
     }
 
@@ -121,7 +121,7 @@ public class Utilisateur {
      * modifier l'adresse mail de l'utilisateur
      * @param pMail la nouvelle adresse mail
      */
-    public void setMail(String pMail) {
+    public void setMail(final String pMail) {
         mail = pMail;
     }
 
@@ -137,7 +137,7 @@ public class Utilisateur {
      * modifier le mot de passe de l'utilisateur
      * @param pMdp le nouveau mot de passe
      */
-    public void setMotDePasse(String pMdp) {
+    public void setMotDePasse(final String pMdp) {
         mdp = pMdp;
     }
 
@@ -153,7 +153,7 @@ public class Utilisateur {
      * modifier le mot de passe de l'utilisateur
      * @param pseudonyme le pseudonyme
      */
-    public void setPseudonyme(String pseudonyme) {
+    public void setPseudonyme(final String pseudonyme) {
         this.pseudonyme = pseudonyme;
     }
 

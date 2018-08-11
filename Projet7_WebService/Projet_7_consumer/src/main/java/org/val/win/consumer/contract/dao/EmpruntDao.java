@@ -8,8 +8,8 @@ public interface EmpruntDao {
 
     List<Emprunt> getListEmprunt(Integer id);
 
-    Emprunt insertEmprunt(final Emprunt pEmprunt);
+    Emprunt emprunt(final Emprunt pEmprunt);
 
-    void prolongerEmprunt(Integer id);
+    void prolongerEmprunt(final Emprunt pEmprunt);
 
 }

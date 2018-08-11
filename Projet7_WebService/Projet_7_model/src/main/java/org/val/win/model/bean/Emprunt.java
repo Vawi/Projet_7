@@ -1,6 +1,6 @@
 package org.val.win.model.bean;
 
-import java.sql.Date;
+import org.joda.time.LocalDate;
 
 /**
  * bean de l'objet emprunt
@@ -28,12 +28,12 @@ public class Emprunt {
     /**
      * date de debut de l'emprunt
      */
-    private Date dateDebut;
+    private LocalDate dateDebut;
 
     /**
      * date de fin de l'emprunt
      */
-    private Date dateFin;
+    private LocalDate dateFin;
 
     /**
      * etat de l'emprunt
@@ -54,7 +54,7 @@ public class Emprunt {
      * constructeur avec id
      * @param pId
      */
-    public Emprunt(Integer pId){
+    public Emprunt(final Integer pId){
         idEmprunt = pId;
     }
 
@@ -66,7 +66,7 @@ public class Emprunt {
      * setter id de l'emprunt
      * @param idEmprunt id de l'emprunt
      */
-    public void setIdEmprunt(Integer idEmprunt) {
+    public void setIdEmprunt(final Integer idEmprunt) {
         this.idEmprunt = idEmprunt;
     }
 
@@ -82,7 +82,7 @@ public class Emprunt {
      * setter id de l'ouvrage
      * @param idOuvrage l'id de l'ouvrage
      */
-    public void setIdOuvrage(Integer idOuvrage) {
+    public void setIdOuvrage(final Integer idOuvrage) {
         this.idOuvrage = idOuvrage;
     }
 
@@ -98,7 +98,7 @@ public class Emprunt {
      * setter de l'id de l'utilisateur
      * @param idUtilisateur l'id de l'utilisateur
      */
-    public void setIdUtilisateur(Integer idUtilisateur) {
+    public void setIdUtilisateur(final Integer idUtilisateur) {
         this.idUtilisateur = idUtilisateur;
     }
 
@@ -114,7 +114,7 @@ public class Emprunt {
      * setter de la date du debut de l'emprunt
      * @param dateDebut date de debut de l'emprunt
      */
-    public void setDateDebut(Date dateDebut) {
+    public void setDateDebut(final LocalDate dateDebut) {
         this.dateDebut = dateDebut;
     }
 
@@ -122,7 +122,7 @@ public class Emprunt {
      * getter de la date du debut de l'emprunt
      * @return la date de debut de l'emprunt
      */
-    public Date getDateDebut() {
+    public LocalDate getDateDebut() {
         return dateDebut;
     }
 
@@ -130,7 +130,7 @@ public class Emprunt {
      * setter de la date de fin de l'emprunt
      * @param dateFin la date de fin de l'emprunt
      */
-    public void setDateFin(Date dateFin) {
+    public void setDateFin(final LocalDate dateFin) {
         this.dateFin = dateFin;
     }
 
@@ -138,7 +138,7 @@ public class Emprunt {
      * getter de la date de fin de l'emprunt
      * @return la date de fin de l'emprunt
      */
-    public Date getDateFin() {
+    public LocalDate getDateFin() {
         return dateFin;
     }
 
@@ -146,7 +146,7 @@ public class Emprunt {
      * setter de l'etat de l'emprunt
      * @param etat l'etat de l'emprunt
      */
-    public void setEtat(String etat) {
+    public void setEtat(final String etat) {
         this.etat = etat;
     }
 
