@@ -2,36 +2,42 @@ INSERT INTO public.utilisateur (
   nom,
   prenom,
   mail,
-  mot_de_passe
+  mot_de_passe,
+  pseudonyme
 )
 VALUES
 (
   'tutu',
   'Toto',
   'toto.tutu@gmail.com',
-  'totoTutu'
+  'totoTutu',
+  'ttutu'
 ),
 (
   'Du chateau',
   'Alvin',
   'Al77@lapost.net',
-  'alouichateau'
+  'alouichateau',
+  'aduchateau'
 ),
 (
   'Merguez',
   'Daniel',
   'Daniel.merguez@orange.fr',
-  'SuperSaucisse'
+  'SuperSaucisse',
+  'dmergez'
 ),
 (
   'Cachou',
   'Tati',
   'tatiCach@gmail.com',
-  'chouchou32'
+  'chouchou32',
+  'tcachou'
 ),
 (
   'nomTest',
   'prenomTest',
   'mail.test@orange.fr',
-  'mdptest'
+  'mdptest',
+  'pnomtest'
 )

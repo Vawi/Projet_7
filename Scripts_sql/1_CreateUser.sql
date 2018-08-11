@@ -6,6 +6,7 @@ CREATE TABLE public.utilisateur (
   prenom VARCHAR(50) NOT NULL,
   mail VARCHAR(150) NOT NULL,
   mot_de_passe VARCHAR(50) NOT NULL,
+  pseudonyme VARCHAR(100) NOT NULL,
   CONSTRAINT utilisateur_pk PRIMARY KEY (id_utilisateur)
 );
 
