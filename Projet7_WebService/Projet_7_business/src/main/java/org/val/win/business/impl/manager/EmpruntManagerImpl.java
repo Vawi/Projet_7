@@ -1,5 +1,6 @@
 package org.val.win.business.impl.manager;
 
+import org.joda.time.LocalDate;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
@@ -40,6 +41,21 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
                 pEmprunt.setIdOuvrage(pOuvrage.getIdOuvrage());
+                empruntDao.emprunt(pEmprunt);
+            }
+        });
+    }
+
+    @Override
+    public void prolongerEmprunt(Emprunt pEmprunt) {
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                LocalDate dateFin = pEmprunt.getDateFin();
+                pEmprunt.setDateFin(dateFin.plusWeeks(1));
                 empruntDao.emprunt(pEmprunt);
             }
         });

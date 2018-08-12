@@ -40,6 +40,28 @@ public class Emprunt {
      */
     private String etat;
 
+    /**
+     * enum de l'etat
+     */
+    public enum Etat {
+        enCours ("l'emprunt est en cours"),
+        prolonge ("l'emprunt a été prolongé"),
+        retard ("l'emprunt n'est pas terminé suite a un retard dans le rendu"),
+        rendu ("l'emprunt est terminé, l'ouvrage à été rendu");
+
+        private String etat = "";
+
+        //Constructeur
+        Etat(String name){
+            this.etat = name;
+        }
+
+        public String toString(){
+            return etat;
+        }
+    }
+
+
 
 
     // ==================== Constructeurs ====================

@@ -20,9 +20,25 @@ public class EmpruntService {
 
     private Emprunt emprunt;
 
+    /**
+     * Creer un emprunt
+     * @param pEmprunt le nouvel emprunt
+     * @param pUtilisateur l'utilisateur qui emprunte
+     * @param pOuvrage l'ouvrage emprunté
+     */
     @WebMethod
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage){
         managerFactory.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
+    }
+
+    /**
+     * Prolonger un emprunt
+     * @param pEmprunt l'emprunt à prolonger
+     * @return un emprunt prolongé
+     */
+    @WebMethod
+    public void prolongation(final Emprunt pEmprunt) {
+        managerFactory.getEmpruntManager().prolongerEmprunt(pEmprunt);
     }
 
 }

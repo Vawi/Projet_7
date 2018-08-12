@@ -91,4 +91,18 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
     }
+
+    /**
+     * Methode servant a fermer un emprunt
+     * @param pEmprunt
+     */
+    @Override
+    public void fermerEmprunt(final Emprunt pEmprunt){
+        String vSQL = "UPDATE public.emprunt " +
+                "SET etat =: etat " +
+                "WHERE id_emprunt =:idEmprunt";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pEmprunt);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams);
+    }
 }

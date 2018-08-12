@@ -12,4 +12,6 @@ public interface EmpruntDao {
 
     void prolongerEmprunt(final Emprunt pEmprunt);
 
+    void fermerEmprunt(final Emprunt pEmprunt);
+
 }

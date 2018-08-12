@@ -38,7 +38,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
     }
 
     /**
-     * Methode qui servira pour connecter un utilisateur précis
+     * Recuperer un utilisateur en fonction de son id
      * @param id prenom de l'utilisateur
      * @return un utilisateur
      */

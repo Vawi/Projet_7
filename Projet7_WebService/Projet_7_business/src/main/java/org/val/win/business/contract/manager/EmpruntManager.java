@@ -7,4 +7,6 @@ import org.val.win.model.bean.Utilisateur;
 public interface EmpruntManager {
 
     void emprunt(Emprunt pEmprunt, Utilisateur pUtilisateur, Ouvrage pOuvrage);
+
+    void prolongerEmprunt(Emprunt pEmprunt);
 }
