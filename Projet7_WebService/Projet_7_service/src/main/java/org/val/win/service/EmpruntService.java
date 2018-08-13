@@ -34,11 +34,28 @@ public class EmpruntService {
     /**
      * Prolonger un emprunt
      * @param pEmprunt l'emprunt à prolonger
-     * @return un emprunt prolongé
      */
     @WebMethod
-    public void prolongation(final Emprunt pEmprunt) {
+    public void prolongationEmprunt(final Emprunt pEmprunt) {
         managerFactory.getEmpruntManager().prolongerEmprunt(pEmprunt);
+    }
+
+    /**
+     * Fermer un emprunt
+     * @param pEmprunt l'emprunt a fermer
+     */
+    @WebMethod
+    public void fermerEmprunt(final Emprunt pEmprunt) {
+        managerFactory.getEmpruntManager().fermerEmprunt(pEmprunt);
+    }
+
+    /**
+     * Changer l'etat d'un emprunt si le rendu a du retard
+     * @param pEmprunt l'emprunt a modifier
+     */
+    @WebMethod
+    public void retardEmprunt(final Emprunt pEmprunt) {
+        managerFactory.getEmpruntManager().retardEmprunt(pEmprunt);
     }
 
 }

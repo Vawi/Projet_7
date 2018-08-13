@@ -23,14 +23,25 @@ public class OuvrageService {
     private Ouvrage ouvrage;
 
     /**
-     * Liste d'ouvrage
+     * Methode pour obtenir la liste des ouvrages
+     * @return la liste complète des ouvrages
      */
-    private List<Ouvrage> listOuvrage;
-
     @WebMethod
     public List<Ouvrage> getListOuvrage() {
-        listOuvrage = managerFactory.getOuvrageManager().getListOuvrage();
-        return listOuvrage;
+        List<Ouvrage> vListOuvrage;
+        vListOuvrage = managerFactory.getOuvrageManager().getListOuvrage();
+        return vListOuvrage;
+    }
+
+    /**
+     * Methode pour obtneir la liste des ouvrages disponibles
+     * @return la liste des ouvrages disponibles
+     */
+    @WebMethod
+    public List<Ouvrage> getListOuvrageDispo() {
+        List<Ouvrage> vListOuvrageDispo;
+        vListOuvrageDispo = managerFactory.getOuvrageManager().getListOuvrage();
+        return vListOuvrageDispo;
     }
 
 }

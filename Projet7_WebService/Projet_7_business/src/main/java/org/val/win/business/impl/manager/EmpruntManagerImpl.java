@@ -10,6 +10,7 @@ import org.val.win.consumer.contract.dao.EmpruntDao;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
+import org.val.win.model.bean.EmpruntEtat;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -41,11 +42,16 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
                 pEmprunt.setIdOuvrage(pOuvrage.getIdOuvrage());
+                pEmprunt.setEtat(EmpruntEtat.ENCOURS.toString());
                 empruntDao.emprunt(pEmprunt);
             }
         });
     }
 
+    /**
+     * Methode servant a prolonger un emprunt
+     * @param pEmprunt l'emprunt a prolonger
+     */
     @Override
     public void prolongerEmprunt(Emprunt pEmprunt) {
         TransactionTemplate vTransactionTemplate
@@ -56,6 +62,39 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
                 LocalDate dateFin = pEmprunt.getDateFin();
                 pEmprunt.setDateFin(dateFin.plusWeeks(1));
+                pEmprunt.setEtat(EmpruntEtat.PROLONGE.toString());
+                empruntDao.emprunt(pEmprunt);
+            }
+        });
+    }
+
+    /**
+     * Methode servant a fermer un emprunt
+     * @param pEmprunt l'emprunt a clore
+     */
+    @Override
+    public void fermerEmprunt(Emprunt pEmprunt) {
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                pEmprunt.setEtat(EmpruntEtat.RENDU.toString());
+                empruntDao.emprunt(pEmprunt);
+            }
+        });
+    }
+
+    @Override
+    public void retardEmprunt(Emprunt pEmprunt) {
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                pEmprunt.setEtat(EmpruntEtat.RETARD.toString());
                 empruntDao.emprunt(pEmprunt);
             }
         });

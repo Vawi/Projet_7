@@ -93,11 +93,12 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
     }
 
     /**
-     * Methode servant a fermer un emprunt
-     * @param pEmprunt
+     * Methode servant a changer l'etat d'un emprunt
+     * Cette methode servira a modifier l'etat en cas de retard ou d'emprunt rendu
+     * @param pEmprunt l'emprunt a modifier
      */
     @Override
-    public void fermerEmprunt(final Emprunt pEmprunt){
+    public void ChangerEtatEmprunt(final Emprunt pEmprunt){
         String vSQL = "UPDATE public.emprunt " +
                 "SET etat =: etat " +
                 "WHERE id_emprunt =:idEmprunt";

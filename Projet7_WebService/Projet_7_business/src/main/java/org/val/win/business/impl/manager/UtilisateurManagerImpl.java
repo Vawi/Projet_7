@@ -41,7 +41,6 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
      */
     @Override
     public Utilisateur getUtilisateur(String pPseudonyme, String pPassword) throws NotFoundException {
-
         List<Utilisateur> listUtilisateur = this.getListUtilisateur();
         Utilisateur vUtilisateur
                 = listUtilisateur.stream()
