@@ -2,105 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da82e4bb-0c9f-4808-ae0e-43e828ffa238" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Batch/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Batch/src/main/java/org/val/win/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Batch/src/test/java/org/val/win/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/dataSources/b836dd11-36dd-41de-b2cf-b76dcf8c1982.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/dataSources/b836dd11-36dd-41de-b2cf-b76dcf8c1982/storage_v2/_src_/database/p7.xw0AAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/dataSources/b836dd11-36dd-41de-b2cf-b76dcf8c1982/storage_v2/_src_/database/p7.xw0AAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/Projet_7_business.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/contract/ManagerFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/contract/manager/EmpruntManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/main/resources/businessContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/src/test/resourcesTest/businessContextTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/businessContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/businessContextTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/contract/ManagerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/contract/manager/EmpruntManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/contract/manager/OuvrageManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/contract/manager/UtilisateurManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/ManagerFactoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/AbstractManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/EmpruntManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/EmpruntManagerImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/EmpruntManagerImpl$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/EmpruntManagerImpl$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/EmpruntManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/OuvrageManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/classes/org/val/win/business/impl/manager/UtilisateurManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_business/target/test-classes/org/val/win/business/impl/manager/UtilisateurManagerImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/Projet_7_consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/EmpruntDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/main/resources/consumerContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/UtilisateurDaoImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/consumerContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/EmpruntDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/OuvrageDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/UtilisateurDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/AbstractDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/UtilisateurDaoImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/Projet_7_model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/src/main/java/org/val/win/model/bean/Emprunt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/src/main/java/org/val/win/model/bean/EmpruntEtat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/src/main/java/org/val/win/model/bean/Ouvrage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/src/main/java/org/val/win/model/bean/Utilisateur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/src/main/java/org/val/win/model/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/target/classes/org/val/win/model/bean/Emprunt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/target/classes/org/val/win/model/bean/EmpruntEtat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/target/classes/org/val/win/model/bean/Ouvrage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/target/classes/org/val/win/model/bean/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_model/target/classes/org/val/win/model/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/Projet_7_service.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/data/conf/db-P7.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/main/java/org/val/win/service/EmpruntService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/main/java/org/val/win/service/OuvrageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/main/java/org/val/win/service/UtilisateurService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/main/resources/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/Projet_7_service/src/main/resources/webservice/webserviceContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_WebService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Webapp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Webapp/src/main/java/org/val/win/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet7_Webapp/src/test/java/org/val/win/AppTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/EmpruntDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/EmpruntDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/OuvrageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/OuvrageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/UtilisateurDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/contract/dao/UtilisateurDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/AbstractDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/AbstractDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/EmpruntDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/OuvrageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/UtilisateurDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/target/test-classes/org/val/win/consumer/impl/dao/UtilisateurDaoImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Projet_7_consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,59 +42,106 @@
       </map>
     </option>
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Projet7_WebService$OuvrageDaoImplTest_getListOuvrage.ic" NAME="OuvrageDaoImplTest.getListOuvrage Coverage Results" MODIFIED="1534350768905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.val.win.consumer.impl.dao.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="p7@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OuvrageDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpruntManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
+      <file leaf-file-name="EmpruntService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/EmpruntService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-201">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="750">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpruntDaoImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="32" column="95" lean-forward="true" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+            <state relative-caret-position="-1220">
+              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consumerContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/resources/consumerContext.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="businessContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml">
+        <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="521">
+              <caret line="78" column="21" selection-start-line="67" selection-start-column="8" selection-end-line="78" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -187,16 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrapContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/bootstrapContext.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="webserviceContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/webservice/webserviceContext.xml">
+      <file leaf-file-name="OuvrageDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            <state relative-caret-position="195">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -209,10 +172,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/resources/webservice/webserviceContext.xml" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -233,8 +199,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,8 +209,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,11 +221,6 @@
             <path>
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -381,7 +343,129 @@
             <path>
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_business" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -389,7 +473,7 @@
             <path>
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_business" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -397,26 +481,8 @@
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -424,7 +490,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -433,7 +499,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="val" type="462c0819:PsiDirectoryNode" />
@@ -443,7 +509,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="val" type="462c0819:PsiDirectoryNode" />
@@ -454,7 +520,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="val" type="462c0819:PsiDirectoryNode" />
@@ -466,34 +532,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="val" type="462c0819:PsiDirectoryNode" />
@@ -506,7 +545,7 @@
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="val" type="462c0819:PsiDirectoryNode" />
@@ -514,14 +553,6 @@
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
-              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
@@ -567,6 +598,56 @@
               <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -589,6 +670,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -608,9 +690,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OuvrageDaoImplTest.getListOuvrage">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="OuvrageDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projet_7_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.val.win.consumer.impl.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.val.win.consumer.impl.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.val.win.consumer.impl.dao.OuvrageDaoImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="OuvrageDaoImplTest.getListOuvrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projet_7_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.val.win.consumer.impl.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.val.win.consumer.impl.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.val.win.consumer.impl.dao.OuvrageDaoImplTest" />
+      <option name="METHOD_NAME" value="getListOuvrage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -650,6 +778,16 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.OuvrageDaoImplTest.getListOuvrage" />
+      <item itemvalue="JUnit.OuvrageDaoImplTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OuvrageDaoImplTest.getListOuvrage" />
+        <item itemvalue="JUnit.OuvrageDaoImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -661,45 +799,67 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534339197878</updated>
-      <workItem from="1534339199490" duration="410000" />
+      <workItem from="1534339199490" duration="677000" />
+      <workItem from="1534349495151" duration="1201000" />
+      <workItem from="1534351417387" duration="100000" />
+      <workItem from="1534354690036" duration="839000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="OuvrageDaoImplTest_getListOuvrage - 2018.08.15 at 18h 29m 27s.xml">
+      <configuration name="OuvrageDaoImplTest.getListOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageDaoImplTest - 2018.08.15 at 18h 30m 37s.xml">
+      <configuration name="OuvrageDaoImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageDaoImplTest_getListOuvrage - 2018.08.15 at 18h 32m 07s.xml">
+      <configuration name="OuvrageDaoImplTest.getListOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageDaoImplTest_getListOuvrage - 2018.08.15 at 18h 32m 45s.xml">
+      <configuration name="OuvrageDaoImplTest.getListOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageDaoImplTest_getListOuvrage - 2018.08.15 at 18h 32m 50s.xml">
+      <configuration name="OuvrageDaoImplTest.getListOuvrage" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410000" />
+    <option name="totallyTimeSpent" value="2817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Designer" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298969" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info id="Web" side_tool="true" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.3298969" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3297619" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,11 +868,161 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/EmpruntService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/resources/consumerContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d7ce468d-c0dd-4dbb-b519-1a6e0fd1a645/database/p7/schema/public/table/ouvrage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d7ce468d-c0dd-4dbb-b519-1a6e0fd1a645/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/resources/consumerContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/bootstrapContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/webservice/webserviceContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -725,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
+        <state relative-caret-position="120">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
@@ -739,17 +1049,64 @@
     <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/webservice/webserviceContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d7ce468d-c0dd-4dbb-b519-1a6e0fd1a645/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/businessContextTest.xml" />
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="15" selection-start-line="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/resources/consumerContext.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml">
+    <entry file="das://d7ce468d-c0dd-4dbb-b519-1a6e0fd1a645/database/p7/schema/public/table/ouvrage">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="195">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -760,10 +1117,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/EmpruntDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="95" lean-forward="true" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+        <state relative-caret-position="60">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/EmpruntService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="78" column="21" selection-start-line="67" selection-start-column="8" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1220">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -822,12 +1217,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Projet7_WebService</last-edited>
+          <last-edited>Spring|Projet_7_business</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
