@@ -25,7 +25,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>4.3.11.RELEASE</spring.version>
-    <cxf.version>2.2.3</cxf.version>
+    <cxf.version>3.2.6</cxf.version>
+    <maven.test.skip>true</maven.test.skip>
   </properties>
 
   <modules>
@@ -167,35 +168,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.1.0</version>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-java2ws-plugin</artifactId>
-        <version>${cxf.version}</version>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>${cxf.version}</version>
-          </dependency>
-        </dependencies>
-
-        <configuration>
-          <className>org.val.win.service.EmpruntService</className>
-          <genWsdl>true</genWsdl>
-          <verbose>true</verbose>
-        </configuration>
-
-        <executions>
-          <execution>
-            <id>process-classes</id>
-            <phase>process-classes</phase>
-            <goals>
-              <goal>java2ws</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
