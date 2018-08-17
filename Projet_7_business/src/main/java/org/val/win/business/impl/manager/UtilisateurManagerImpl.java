@@ -44,7 +44,7 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
         List<Utilisateur> listUtilisateur = this.getListUtilisateur();
         Utilisateur vUtilisateur
                 = listUtilisateur.stream()
-                .filter(p -> p.getPrenom().equals(pPseudonyme))
+                .filter(p -> p.getPseudonyme().equals(pPseudonyme))
                 .filter(p -> p.getMotDePasse().equals(pPassword))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Aucun utilisateur correspondant au couple prenom/password fourni."));

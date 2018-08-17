@@ -26,7 +26,7 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
                 Ouvrage vOuvrage = new Ouvrage(pRS.getInt("id_ouvrage"));
                 vOuvrage.setNombreDispo(pRS.getInt("nombre_disponible"));
                 vOuvrage.setAuteur(pRS.getString("auteur"));
-                vOuvrage.setNomOuvrage(pRS.getString("nom_ouvrage"));
+                vOuvrage.setNomOuvrage(pRS.getString("titre"));
                 return vOuvrage;
             }
         };
