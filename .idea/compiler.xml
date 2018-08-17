@@ -22,6 +22,7 @@
         <module name="Projet_7_consumer" />
         <module name="Projet_7_model" />
         <module name="Projet_7_service" />
+        <module name="Projet_7_technical" />
       </profile>
     </annotationProcessing>
   </component>
