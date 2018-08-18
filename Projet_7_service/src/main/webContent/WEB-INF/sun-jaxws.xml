@@ -6,4 +6,12 @@
             name="EmpruntService"
             implementation="org.val.win.service.impl.EmpruntServiceImpl"
             url-pattern="/emprunt"/>
+    <endpoint
+            name="OuvrageService"
+            implementation="org.val.win.service.impl.OuvrageServiceImpl"
+            url-pattern="/ouvrage"/>
+    <endpoint
+            name="UtilisateurService"
+            implementation="org.val.win.service.impl.UtilisateurServiceImpl"
+            url-pattern="/utilisateur"/>
 </endpoints>

@@ -4,6 +4,7 @@ import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
+import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.EmpruntService;
 
 import javax.inject.Inject;
@@ -49,7 +50,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * @param pEmprunt l'emprunt a fermer
      */
     @Override
-    public void fermerEmprunt(final Emprunt pEmprunt) {
+    public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
         managerFactory.getEmpruntManager().fermerEmprunt(pEmprunt);
     }
 

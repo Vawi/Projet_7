@@ -4,6 +4,7 @@ import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.EmpruntEtat;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
+import org.val.win.model.exception.NotFoundException;
 
 import java.util.List;
 
@@ -15,6 +16,13 @@ public interface EmpruntManager {
      * @return la liste d'emprunt d'un utilisateur
      */
     List<Emprunt> getListEmprunt(Integer id);
+
+    /**
+     * Récupérer un emprunt
+     * @param id l'id de l'emprunt
+     * @return un emprunt
+     */
+    Emprunt getEmprunt(Integer id);
 
     /**
      * Emprunt d'un ouvrage
@@ -34,7 +42,7 @@ public interface EmpruntManager {
      * Methode servant a clore un emprunt
      * @param pEmprunt l'emprunt a clore
      */
-    void fermerEmprunt(Emprunt pEmprunt);
+    void fermerEmprunt(Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Methode servant a changer l'etat d'un emprunt

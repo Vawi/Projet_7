@@ -36,46 +36,36 @@ public class EmpruntManagerImplTest {
 
     @Autowired
     private EmpruntManager empruntManager;
-
     @Autowired
     private UtilisateurManager utilisateurManager;
-
     @Autowired
     private OuvrageManager ouvrageManager;
 
     private Emprunt emprunt;
-
     private Utilisateur utilisateur;
-
     private Ouvrage ouvrage;
 
-    private LocalDate actualDate = LocalDate.now();
 
     @Test
     public void emprunt() throws NotFoundException {
-
-        try {
-            utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
-        } catch (Exception e) {
-            assertTrue(e instanceof NotFoundException);
-        }
-
+        utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
         ouvrage = ouvrageManager.getOuvrage(15);
-
         empruntManager.emprunt(emprunt, utilisateur, ouvrage);
-
-        List<Emprunt> listEmprunt = empruntManager.getListEmprunt(utilisateur.getIdUtilisateur());
-
-        Assertions.assertEquals(listEmprunt.size(), 1);
-
+        Assertions.assertNotNull(empruntManager.getListEmprunt(utilisateur.getIdUtilisateur()));
     }
 
     @Test
     public void prolongerEmprunt() {
+        emprunt = empruntManager.getEmprunt(2);
+        empruntManager.prolongerEmprunt(emprunt);
+        Assertions.assertTrue(emprunt.getEtat() == "l'emprunt a été prolongé");
     }
 
     @Test
-    public void fermerEmprunt() {
+    public void fermerEmprunt() throws NotFoundException {
+        emprunt = empruntManager.getEmprunt(1);
+        empruntManager.fermerEmprunt(emprunt);
+        Assert.assertTrue(emprunt.getEtat() == "l'emprunt est terminé, l'ouvrage à été rendu");
     }
 
     @Test

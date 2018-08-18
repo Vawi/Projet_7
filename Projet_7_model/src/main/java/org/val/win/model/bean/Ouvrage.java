@@ -127,7 +127,7 @@ public class Ouvrage {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Utilisateur idUtilisateur=").append(idOuvrage)
+                .append("Ouvrage id de l'ouvrage=").append(idOuvrage)
                 .append(vSEP).append("nom=\"").append(nomOuvrage).append('"')
                 .append(vSEP).append("prenom=\"").append(auteur).append('"')
                 .append(vSEP).append("mail=\"").append(nombreDispo).append('"')

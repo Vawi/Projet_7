@@ -61,4 +61,13 @@ public class OuvrageManagerImpl extends AbstractManager implements OuvrageManage
                 .orElseThrow(() -> new NotFoundException("Ouvrage non trouvé"));
         return vOuvrage;
     }
+
+    /**
+     * Modifier le nombre d'exemplaire disponible d'un ouvrage
+     * @param pOuvrage l'ouvrage concerné par le changement de nombre d'exemplaire
+     */
+    @Override
+    public void ModifierNombreDispo(Ouvrage pOuvrage) {
+        this.ouvrageDao.ModifierNombreDispo(pOuvrage);
+    }
 }

@@ -3,6 +3,7 @@ package org.val.win.service.contract;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
+import org.val.win.model.exception.NotFoundException;
 
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -36,7 +37,7 @@ public interface EmpruntService {
      * @param pEmprunt l'emprunt a fermer
      */
     @WebMethod
-    void fermerEmprunt(final Emprunt pEmprunt);
+    void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Changer l'etat d'un emprunt si le rendu a du retard

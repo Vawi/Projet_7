@@ -2,6 +2,9 @@ package org.val.win.consumer.impl.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.val.win.consumer.contract.dao.OuvrageDao;
 import org.val.win.model.bean.Ouvrage;
 
@@ -33,5 +36,24 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
         List<Ouvrage> vListOuvrage = vJdbcTemplate.query(vSQL, vRowMapper);
 
         return vListOuvrage;
+    }
+
+    /**
+     * Modifier le nombre d'exemplaire disponible d'un ouvrage
+     * @param pOuvrage l'ouvrage concerné par le changement de nombre d'exemplaire
+     */
+    @Override
+    public void ModifierNombreDispo(Ouvrage pOuvrage) {
+        String vSQL = "INSERT INTO public.ouvrage " +
+                "(nombre_disponible)\n" +
+                "VALUES\n" +
+                "(:nombreDisponible)";
+
+        SqlParameterSource vParams = new MapSqlParameterSource()
+
+                .addValue("nombreDisponible", pOuvrage.getNombreDispo());
+
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams);
     }
 }

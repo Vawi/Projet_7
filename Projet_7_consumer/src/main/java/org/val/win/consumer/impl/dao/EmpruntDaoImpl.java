@@ -15,6 +15,7 @@ import javax.inject.Named;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.joda.time.LocalDate;
+
 import java.util.List;
 
 @Named
@@ -42,6 +43,21 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
         };
         List<Emprunt> vListEmprunt = vJdbcTemplate.query(vSQL, vRowMapper, id);
         return vListEmprunt;
+    }
+
+    /**
+     * Récupérer un emprunt
+     * @param id l'id de l'emprunt
+     * @return un emprunt
+     */
+    @Override
+    public Emprunt getEmprunt(Integer id) {
+        String vSQL = "SELECT * FROM public.emprunt " +
+                      "WHERE id_emprunt = ?";
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        Emprunt emprunt = vJdbcTemplate.queryForObject(vSQL, Emprunt.class, id);
+        return emprunt;
     }
 
     /**∞

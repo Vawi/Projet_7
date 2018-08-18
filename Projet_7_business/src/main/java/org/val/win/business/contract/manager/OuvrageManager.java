@@ -26,4 +26,10 @@ public interface OuvrageManager {
      */
     Ouvrage getOuvrage(Integer id) throws NotFoundException;
 
+    /**
+     * Modifier le nombre d'exemplaire disponible d'un ouvrage
+     * @param pOuvrage l'ouvrage concerné par le changement de nombre d'exemplaire
+     */
+    void ModifierNombreDispo(Ouvrage pOuvrage);
+
 }
