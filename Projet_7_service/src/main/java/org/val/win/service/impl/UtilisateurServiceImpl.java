@@ -10,7 +10,7 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 /**
- * Implementation du webservice pour les utilisateur 
+ * Implementation du webservice pour les utilisateur
  */
 @WebService(endpointInterface = "org.val.win.service.contract.UtilisateurService")
 public class UtilisateurServiceImpl implements UtilisateurService {
