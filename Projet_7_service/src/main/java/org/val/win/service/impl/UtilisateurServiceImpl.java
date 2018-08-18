@@ -10,9 +10,9 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 /**
- * Web service pour les utilisateurs
+ * Implementation du webservice pour les utilisateur 
  */
-@WebService(serviceName = "Utilisateur")
+@WebService(endpointInterface = "org.val.win.service.contract.UtilisateurService")
 public class UtilisateurServiceImpl implements UtilisateurService {
 
     /**
@@ -23,7 +23,13 @@ public class UtilisateurServiceImpl implements UtilisateurService {
 
     private Utilisateur utilisateur;
 
-    @WebMethod
+    /**
+     * Recuperer un utilisateur
+     * @param pseudonyme son pseudonyme
+     * @param mdp son mot de passe
+     * @return un utilisateur
+     */
+    @Override
     public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) {
         try {
             utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(pseudonyme, mdp);

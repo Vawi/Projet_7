@@ -10,7 +10,10 @@ import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
-@WebService(serviceName = "emprunt")
+/**
+ * Implementation du webservice de l'emprunt
+ */
+@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService")
 public class EmpruntServiceImpl implements EmpruntService {
 
     /**
@@ -27,7 +30,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * @param pUtilisateur l'utilisateur qui emprunte
      * @param pOuvrage l'ouvrage emprunté
      */
-    @WebMethod
+    @Override
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage){
         managerFactory.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
     }
@@ -36,7 +39,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * Prolonger un emprunt
      * @param pEmprunt l'emprunt à prolonger
      */
-    @WebMethod
+    @Override
     public void prolongationEmprunt(final Emprunt pEmprunt) {
         managerFactory.getEmpruntManager().prolongerEmprunt(pEmprunt);
     }
@@ -45,7 +48,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * Fermer un emprunt
      * @param pEmprunt l'emprunt a fermer
      */
-    @WebMethod
+    @Override
     public void fermerEmprunt(final Emprunt pEmprunt) {
         managerFactory.getEmpruntManager().fermerEmprunt(pEmprunt);
     }
@@ -54,7 +57,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * Changer l'etat d'un emprunt si le rendu a du retard
      * @param pEmprunt l'emprunt a modifier
      */
-    @WebMethod
+    @Override
     public void retardEmprunt(final Emprunt pEmprunt) {
         managerFactory.getEmpruntManager().retardEmprunt(pEmprunt);
     }

@@ -9,7 +9,10 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.List;
 
-@WebService(serviceName = "Ouvrage")
+/**
+ * implementation du webservice des ouvrages
+ */
+@WebService(endpointInterface = "org.val.win.service.contract.OuvrageService")
 public class OuvrageServiceImpl implements OuvrageService {
 
     /**
@@ -27,7 +30,7 @@ public class OuvrageServiceImpl implements OuvrageService {
      * Methode pour obtenir la liste des ouvrages
      * @return la liste complète des ouvrages
      */
-    @WebMethod
+    @Override
     public List<Ouvrage> getListOuvrage() {
         List<Ouvrage> vListOuvrage;
         vListOuvrage = managerFactory.getOuvrageManager().getListOuvrage();
@@ -38,7 +41,7 @@ public class OuvrageServiceImpl implements OuvrageService {
      * Methode pour obtneir la liste des ouvrages disponibles
      * @return la liste des ouvrages disponibles
      */
-    @WebMethod
+    @Override
     public List<Ouvrage> getListOuvrageDispo() {
         List<Ouvrage> vListOuvrageDispo;
         vListOuvrageDispo = managerFactory.getOuvrageManager().getListOuvrage();
