@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.val.win.business.contract.manager.OuvrageManager;
 
 import org.val.win.model.bean.Ouvrage;
+import org.val.win.model.exception.NotFoundException;
 
 import java.util.List;
 
@@ -30,6 +31,8 @@ public class OuvrageManagerImplTest {
     @Autowired
     private OuvrageManager ouvrageManager;
 
+    private Ouvrage ouvrage;
+
     @Test
     public void getListOuvrage() {
         List<Ouvrage> listOuvrage = ouvrageManager.getListOuvrage();
@@ -39,5 +42,16 @@ public class OuvrageManagerImplTest {
 
     @Test
     public void getListOuvrageDispo() {
+        List<Ouvrage> listOuvrageDispo = ouvrageManager.getListOuvrageDispo();
+    }
+
+    @Test
+    public void getOuvrage() throws NotFoundException {
+        try {
+            ouvrage = ouvrageManager.getOuvrage(15);
+        } catch (Exception e) {
+            assertTrue(e instanceof NotFoundException);
+        }
+        Assertions.assertNotNull(ouvrage);
     }
 }

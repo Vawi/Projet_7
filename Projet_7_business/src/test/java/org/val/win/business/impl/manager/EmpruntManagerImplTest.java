@@ -3,7 +3,10 @@ package org.val.win.business.impl.manager;
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.joda.time.LocalDate;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
@@ -33,8 +36,10 @@ public class EmpruntManagerImplTest {
 
     @Autowired
     private EmpruntManager empruntManager;
+
     @Autowired
     private UtilisateurManager utilisateurManager;
+
     @Autowired
     private OuvrageManager ouvrageManager;
 
@@ -47,7 +52,7 @@ public class EmpruntManagerImplTest {
     private LocalDate actualDate = LocalDate.now();
 
     @Test
-    public void emprunt() {
+    public void emprunt() throws NotFoundException {
 
         try {
             utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
@@ -56,13 +61,6 @@ public class EmpruntManagerImplTest {
         }
 
         ouvrage = ouvrageManager.getOuvrage(15);
-
-        emprunt.setEtat(EmpruntEtat.ENCOURS.toString());
-        emprunt.setDateDebut(actualDate);
-        emprunt.setDateFin(actualDate.plusWeeks(2));
-        emprunt.setIdUtilisateur(utilisateur.getIdUtilisateur());
-        emprunt.setIdOuvrage(ouvrage.getIdOuvrage());
-        emprunt.setIdOuvrage(1);
 
         empruntManager.emprunt(emprunt, utilisateur, ouvrage);
 

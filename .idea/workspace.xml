@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da82e4bb-0c9f-4808-ae0e-43e828ffa238" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_business/p7log.log" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/p7log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/EmpruntManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/EmpruntManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_business/target/test-classes/org/val/win/business/impl/manager/EmpruntManagerImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_business/target/test-classes/org/val/win/business/impl/manager/EmpruntManagerImplTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Projet_7_consumer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,8 +105,8 @@
       <file leaf-file-name="OuvrageManagerImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="52">
+              <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,11 +114,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="OuvrageDaoImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UtilisateurManagerImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="539">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,29 +138,31 @@
       <file leaf-file-name="EmpruntManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="207">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1861#2482#0" expanded="true" />
+                <element signature="e#2481#2482#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpruntDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
+      <file leaf-file-name="OuvrageDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="405">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmpruntManagerImplTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmpruntManagerImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+            <state relative-caret-position="576">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,42 +170,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilisateurManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-            </state>
+      <file leaf-file-name="p7log.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_business/p7log.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-3774" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
+      <file leaf-file-name="OuvrageDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OuvrageManagerImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -201,8 +189,17 @@
       <file leaf-file-name="OuvrageManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="345">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OuvrageManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -225,7 +222,6 @@
       <list>
         <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/resources/webservice/webserviceContext.xml" />
-        <option value="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/pom.xml" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/OuvrageService.java" />
         <option value="$PROJECT_DIR$/Projet_7_consumer/pom.xml" />
@@ -247,15 +243,17 @@
         <option value="$PROJECT_DIR$/Projet_7_technical/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/OuvrageServiceImpl.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/pom.xml" />
-        <option value="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/EmpruntManager.java" />
+        <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java" />
-        <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" />
-        <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java" />
-        <option value="$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" />
+        <option value="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java" />
         <option value="$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java" />
+        <option value="$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java" />
       </list>
     </option>
   </component>
@@ -292,8 +290,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="948" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -301,6 +300,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -647,6 +648,90 @@
             <path>
               <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
+              <item name="Projet_7_consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet7_WebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7" type="462c0819:PsiDirectoryNode" />
               <item name="Projet_7_service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -785,8 +870,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -862,6 +945,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="OuvrageDaoImplTest.getListOuvrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projet_7_consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.val.win.consumer.impl.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.val.win.consumer.impl.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.val.win.consumer.impl.dao.OuvrageDaoImplTest" />
+      <option name="METHOD_NAME" value="getListOuvrage" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="OuvrageManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Projet_7_business" />
       <extension name="coverage">
@@ -908,7 +1014,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="UtilisateurManagerImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OuvrageManagerImplTest.getOuvrage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Projet_7_business" />
       <extension name="coverage">
         <pattern>
@@ -919,31 +1025,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.val.win.business.impl.manager" />
-      <option name="MAIN_CLASS_NAME" value="org.val.win.business.impl.manager.UtilisateurManagerImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UtilisateurManagerImplTest.getListUtilisateur" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Projet_7_business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.val.win.business.impl.manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.val.win.business.impl.manager" />
-      <option name="MAIN_CLASS_NAME" value="org.val.win.business.impl.manager.UtilisateurManagerImplTest" />
-      <option name="METHOD_NAME" value="getListUtilisateur" />
+      <option name="MAIN_CLASS_NAME" value="org.val.win.business.impl.manager.OuvrageManagerImplTest" />
+      <option name="METHOD_NAME" value="getOuvrage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -993,19 +1076,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.UtilisateurManagerImplTest" />
-      <item itemvalue="JUnit.UtilisateurManagerImplTest.getListUtilisateur" />
       <item itemvalue="JUnit.OuvrageManagerImplTest.getListOuvrage" />
       <item itemvalue="JUnit.OuvrageManagerImplTest" />
       <item itemvalue="JUnit.EmpruntManagerImplTest.emprunt" />
+      <item itemvalue="JUnit.OuvrageManagerImplTest.getOuvrage" />
+      <item itemvalue="JUnit.OuvrageDaoImplTest.getListOuvrage" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EmpruntManagerImplTest.emprunt" />
+        <item itemvalue="JUnit.OuvrageDaoImplTest.getListOuvrage" />
+        <item itemvalue="JUnit.OuvrageManagerImplTest.getOuvrage" />
         <item itemvalue="JUnit.OuvrageManagerImplTest" />
         <item itemvalue="JUnit.OuvrageManagerImplTest.getListOuvrage" />
-        <item itemvalue="JUnit.UtilisateurManagerImplTest" />
-        <item itemvalue="JUnit.UtilisateurManagerImplTest.getListUtilisateur" />
       </list>
     </recent_temporary>
   </component>
@@ -1032,50 +1115,51 @@
       <workItem from="1534526769179" duration="1017000" />
       <workItem from="1534527880154" duration="213000" />
       <workItem from="1534584799014" duration="1783000" />
+      <workItem from="1534588529966" duration="2298000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OuvrageManagerImplTest - 2018.08.17 at 16h 27m 56s.xml">
-      <configuration name="OuvrageManagerImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilisateurManagerImplTest - 2018.08.17 at 16h 28m 07s.xml">
-      <configuration name="UtilisateurManagerImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OuvrageManagerImplTest_getListOuvrage - 2018.08.17 at 19h 42m 02s.xml">
-      <configuration name="OuvrageManagerImplTest.getListOuvrage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OuvrageManagerImplTest_getListOuvrage - 2018.08.17 at 19h 43m 06s.xml">
-      <configuration name="OuvrageManagerImplTest.getListOuvrage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OuvrageManagerImplTest - 2018.08.17 at 19h 43m 25s.xml">
-      <configuration name="OuvrageManagerImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OuvrageManagerImplTest - 2018.08.17 at 19h 47m 46s.xml">
-      <configuration name="OuvrageManagerImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 11h 45m 58s.xml">
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 12h 47m 14s.xml">
       <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 11h 58m 37s.xml">
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 12h 47m 37s.xml">
       <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 11h 59m 38s.xml">
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 12h 50m 50s.xml">
       <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 12h 02m 25s.xml">
+    <history-entry file="OuvrageManagerImplTest - 2018.08.18 at 12h 55m 37s.xml">
+      <configuration name="OuvrageManagerImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageManagerImplTest_getOuvrage - 2018.08.18 at 12h 57m 12s.xml">
+      <configuration name="OuvrageManagerImplTest.getOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageManagerImplTest_getOuvrage - 2018.08.18 at 13h 09m 52s.xml">
+      <configuration name="OuvrageManagerImplTest.getOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 13h 10m 14s.xml">
+      <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 13h 11m 02s.xml">
+      <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OuvrageDaoImplTest_getListOuvrage - 2018.08.18 at 13h 12m 58s.xml">
+      <configuration name="OuvrageDaoImplTest.getListOuvrage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmpruntManagerImplTest_emprunt - 2018.08.18 at 13h 14m 43s.xml">
       <configuration name="EmpruntManagerImplTest.emprunt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11028000" />
+    <option name="totallyTimeSpent" value="13326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3296593" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -1087,7 +1171,7 @@
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3296593" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2809524" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2809524" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297619" />
@@ -1114,17 +1198,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1237,13 +1314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="45" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/contract/OuvrageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1262,9 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,9 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1320,12 +1384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/p7log.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-12554" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_technical/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1337,58 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" column="7" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1406,50 +1412,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="64" column="30" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
+        <state relative-caret-position="135">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="522">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="42" column="100" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/OuvrageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        <state relative-caret-position="513">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/UtilisateurManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/test/java/org/val/win/consumer/impl/dao/OuvrageDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/p7log.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-3774" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-12554" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1861#2482#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/EmpruntManagerImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

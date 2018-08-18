@@ -34,18 +34,4 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
 
         return vListOuvrage;
     }
-
-    /**
-     * Retour un ouvrage précis
-     * @param id l'id de l'ouvrage
-     * @return un ouvrage
-     */
-    @Override
-    public Ouvrage getOuvrage(final Integer id) {
-        String vSQL = "SELECT * FROM public.ouvrage " +
-                "WHERE id_ouvrage = ?";
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        Ouvrage ouvrage = vJdbcTemplate.queryForObject(vSQL, Ouvrage.class, id);
-        return ouvrage;
-    }
 }

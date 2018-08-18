@@ -12,11 +12,4 @@ public interface OuvrageDao {
      */
     List<Ouvrage> getListOuvrage();
 
-    /**
-     * Retour un ouvrage précis
-     * @param id l'id de l'ouvrage
-     * @return un ouvrage
-     */
-    Ouvrage getOuvrage(final Integer id);
-
 }
