@@ -41,4 +41,14 @@ public class OuvrageManagerImpl extends AbstractManager implements OuvrageManage
                 .collect(Collectors.toList());
         return vListOuvrage;
     }
+
+    /**
+     * Obtenir un ouvrage
+     * @param id l'id de l'ouvrage
+     * @return un ouvrage
+     */
+    @Override
+    public Ouvrage getOuvrage(Integer id) {
+        return ouvrageDao.getOuvrage(id);
+    }
 }

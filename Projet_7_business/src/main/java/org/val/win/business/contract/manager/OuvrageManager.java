@@ -18,4 +18,11 @@ public interface OuvrageManager {
      */
     List<Ouvrage> getListOuvrageDispo();
 
+    /**
+     * récupérer un ouvrage
+     * @param id l'id de l'ouvrage
+     * @return l'ouvrage en question
+     */
+    Ouvrage getOuvrage(Integer id);
+
 }

@@ -9,6 +9,6 @@ public interface UtilisateurManager {
 
     List<Utilisateur> getListUtilisateur();
 
-    Utilisateur getUtilisateur(String pPrenom, String pPassword) throws NotFoundException;
+    Utilisateur getUtilisateur(String pPseudonyme, String pPassword) throws NotFoundException;
 
 }

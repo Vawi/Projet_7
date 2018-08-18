@@ -16,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 /**
  * Classe de gestion des transaction pour les emprunts
@@ -31,6 +32,16 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
     @Inject
     @Named("txManagerP7")
     private PlatformTransactionManager platformTransactionManager;
+
+    /**
+     * Retour la liste des emprunts d'un utilisateur
+     * @param id de l'utilisateur
+     * @return la liste d'emprunt d'un utilisateur
+     */
+    @Override
+    public List<Emprunt> getListEmprunt(Integer id) {
+        return empruntDao.getListEmprunt(id);
+    }
 
     /**
      * Methode pour l'emprunt

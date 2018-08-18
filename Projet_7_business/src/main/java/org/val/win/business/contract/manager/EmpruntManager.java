@@ -5,7 +5,16 @@ import org.val.win.model.bean.EmpruntEtat;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 
+import java.util.List;
+
 public interface EmpruntManager {
+
+    /**
+     * Retour la liste des emprunts d'un utilisateur
+     * @param id de l'utilisateur
+     * @return la liste d'emprunt d'un utilisateur
+     */
+    List<Emprunt> getListEmprunt(Integer id);
 
     /**
      * Emprunt d'un ouvrage
