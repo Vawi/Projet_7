@@ -87,8 +87,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2018-08-19.16:21:58.844</IntrospectionTimestamp>
-      <IntrospectionStateNumber>559</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-08-19.22:51:19.938</IntrospectionTimestamp>
+      <IntrospectionStateNumber>576</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -215,9 +215,9 @@
     </column>
     <column id="34" parent="26" name="etat">
       <Position>6</Position>
-      <DataType>varchar(25)|0s</DataType>
+      <DataType>varchar(80)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>559</StateNumber>
+      <StateNumber>576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="35" parent="26" name="emprunt_pk">

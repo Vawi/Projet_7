@@ -167,7 +167,7 @@ public class Emprunt {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Utilisateur idUtilisateur=").append(idEmprunt)
+                .append("Emprunt id de l'emprunt=").append(idEmprunt)
                 .append(vSEP).append("nom=\"").append(idOuvrage).append('"')
                 .append(vSEP).append("prenom=\"").append(idUtilisateur).append('"')
                 .append(vSEP).append("mail=\"").append(dateDebut).append('"')

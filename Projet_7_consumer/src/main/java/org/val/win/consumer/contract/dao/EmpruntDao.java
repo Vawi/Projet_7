@@ -8,10 +8,9 @@ public interface EmpruntDao {
 
     /**
      * Obtenir la liste des emprunts d'un utilisateur
-     * @param id l'id de l'utilisateur
      * @return la liste d'emprunt
      */
-    List<Emprunt> getListEmprunt(Integer id);
+    List<Emprunt> getListEmprunt();
 
     /**
      * Emprunter un ouvrage
@@ -31,12 +30,5 @@ public interface EmpruntDao {
      * @param pEmprunt l'emprunt dont l'etat va changer
      */
     void ChangerEtatEmprunt(final Emprunt pEmprunt);
-
-    /**
-     * Obtenir un emprunt en particulier
-     * @param id l'id de l'emprunt
-     * @return l'emprunt
-     */
-    Emprunt getEmprunt(Integer id);
 
 }

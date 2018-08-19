@@ -6,7 +6,7 @@ CREATE TABLE public.emprunt (
   id_ouvrage INTEGER NOT NULL,
   date_debut DATE NOT NULL,
   date_fin DATE NOT NULL,
-  etat VARCHAR(25) NOT NULL,
+  etat VARCHAR(80) NOT NULL,
   CONSTRAINT emprunt_pk PRIMARY KEY (id_emprunt)
 );
 

@@ -26,9 +26,8 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
      * @return liste d'utilisateur
      */
     @Override
-    public List<Emprunt> getListEmprunt(Integer id) {
-        String vSQL = "SELECT * FROM public.emprunt " +
-                      "WHERE id_utilisateur = ?";
+    public List<Emprunt> getListEmprunt() {
+        String vSQL = "SELECT * FROM public.emprunt ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Emprunt> vRowMapper = new RowMapper<Emprunt>() {
             public Emprunt mapRow(final ResultSet pRS, final int pRowNum) throws SQLException {
@@ -41,26 +40,11 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
                 return vEmprunt;
             }
         };
-        List<Emprunt> vListEmprunt = vJdbcTemplate.query(vSQL, vRowMapper, id);
+        List<Emprunt> vListEmprunt = vJdbcTemplate.query(vSQL, vRowMapper);
         return vListEmprunt;
     }
 
     /**
-     * Récupérer un emprunt
-     * @param id l'id de l'emprunt
-     * @return un emprunt
-     */
-    @Override
-    public Emprunt getEmprunt(Integer id) {
-        String vSQL = "SELECT * FROM public.emprunt " +
-                      "WHERE id_emprunt = ?";
-
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        Emprunt emprunt = vJdbcTemplate.queryForObject(vSQL, Emprunt.class, id);
-        return emprunt;
-    }
-
-    /**∞
      * Creer un emprunt dans la db
      * @param pEmprunt l'emprunt a creer
      * @return l'emprunt crée

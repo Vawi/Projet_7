@@ -1,11 +1,5 @@
 package org.val.win.business.impl.manager;
 
-import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.joda.time.LocalDate;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -20,12 +14,9 @@ import org.val.win.business.contract.manager.EmpruntManager;
 import org.val.win.business.contract.manager.OuvrageManager;
 import org.val.win.business.contract.manager.UtilisateurManager;
 import org.val.win.model.bean.Emprunt;
-import org.val.win.model.bean.EmpruntEtat;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;
-
-import java.util.List;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -41,48 +32,40 @@ public class EmpruntManagerImplTest {
     @Autowired
     private OuvrageManager ouvrageManager;
 
-    private Emprunt emprunt;
-    private Utilisateur utilisateur;
-    private Ouvrage ouvrage;
-
 
     @Test
     public void emprunt() throws NotFoundException {
-
         Emprunt emprunt = new Emprunt();
-
-        utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
-
-        ouvrage = ouvrageManager.getOuvrage(15);
-
+        Utilisateur utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
+        Ouvrage ouvrage = ouvrageManager.getOuvrage(15);
         empruntManager.emprunt(emprunt, utilisateur, ouvrage);
-
-        Assertions.assertNotNull(empruntManager.getListEmprunt(utilisateur.getIdUtilisateur()));
+        Assertions.assertNotNull(empruntManager.getListEmpruntUtilisateur(utilisateur.getIdUtilisateur()));
     }
 
     @Test
-    public void getEmprunt() {
-
-        emprunt = empruntManager.getEmprunt(1);
-        Assertions.assertNotNull(emprunt);
-
+    public void getEmprunt() throws NotFoundException {
+        Emprunt vEmprunt = empruntManager.getEmprunt(1);
+        Assertions.assertNotNull(vEmprunt);
     }
 
     @Test
-    public void prolongerEmprunt() {
-        emprunt = empruntManager.getEmprunt(2);
-        empruntManager.prolongerEmprunt(emprunt);
-        Assertions.assertTrue(emprunt.getEtat() == "l'emprunt a été prolongé");
+    public void prolongerEmprunt() throws NotFoundException {
+        Emprunt vEmprunt = empruntManager.getEmprunt(2);
+        empruntManager.prolongerEmprunt(vEmprunt);
+        Assertions.assertTrue(vEmprunt.getEtat() == "l'emprunt a été prolongé");
     }
 
     @Test
     public void fermerEmprunt() throws NotFoundException {
-        emprunt = empruntManager.getEmprunt(1);
-        empruntManager.fermerEmprunt(emprunt);
-        Assert.assertTrue(emprunt.getEtat() == "l'emprunt est terminé, l'ouvrage à été rendu");
+        Emprunt vEmprunt = empruntManager.getEmprunt(1);
+        empruntManager.fermerEmprunt(vEmprunt);
+        Assert.assertTrue(vEmprunt.getEtat() == "l'emprunt est terminé, l'ouvrage à été rendu");
     }
 
     @Test
-    public void retardEmprunt() {
+    public void retardEmprunt() throws NotFoundException {
+        Emprunt vEmprunt = empruntManager.getEmprunt(1);
+        empruntManager.retardEmprunt(vEmprunt);
+        Assert.assertTrue(vEmprunt.getEtat() == "l'emprunt n'est pas terminé suite a un retard dans le rendu");
     }
 }

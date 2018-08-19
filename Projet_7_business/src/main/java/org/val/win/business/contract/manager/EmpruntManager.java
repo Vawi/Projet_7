@@ -12,17 +12,18 @@ public interface EmpruntManager {
 
     /**
      * Retour la liste des emprunts d'un utilisateur
-     * @param id de l'utilisateur
      * @return la liste d'emprunt d'un utilisateur
      */
-    List<Emprunt> getListEmprunt(Integer id);
+    List<Emprunt> getListEmprunt();
+
+    List<Emprunt> getListEmpruntUtilisateur(Integer id);
 
     /**
      * Récupérer un emprunt
      * @param id l'id de l'emprunt
      * @return un emprunt
      */
-    Emprunt getEmprunt(Integer id);
+    Emprunt getEmprunt(final Integer id) throws NotFoundException;
 
     /**
      * Emprunt d'un ouvrage
@@ -30,24 +31,24 @@ public interface EmpruntManager {
      * @param pUtilisateur l'utilisateur qui emprunte
      * @param pOuvrage l'ouvrage emprunté
      */
-    void emprunt(Emprunt pEmprunt, Utilisateur pUtilisateur, Ouvrage pOuvrage);
+    void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage);
 
     /**
      * Prolongation d'un emprunt
      * @param pEmprunt l'emprunt a prolonger
      */
-    void prolongerEmprunt(Emprunt pEmprunt);
+    void prolongerEmprunt(final Emprunt pEmprunt);
 
     /**
      * Methode servant a clore un emprunt
      * @param pEmprunt l'emprunt a clore
      */
-    void fermerEmprunt(Emprunt pEmprunt) throws NotFoundException;
+    void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Methode servant a changer l'etat d'un emprunt
      * si l'ouvrage n'a pas été rendu a la date final prévue
      * @param pEmprunt l'emprunt dont l'ouvrage n'a pas été rendu
      */
-    void retardEmprunt(Emprunt pEmprunt);
+    void retardEmprunt(final Emprunt pEmprunt);
 }

@@ -19,6 +19,7 @@ import org.val.win.model.exception.NotFoundException;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Classe de gestion des transaction pour les emprunts
@@ -34,20 +35,26 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
     @Inject
     private OuvrageManager ouvrageManager;
 
-    private Emprunt emprunt;
-
     @Inject
     @Named("txManagerP7")
     private PlatformTransactionManager platformTransactionManager;
 
     /**
      * Retour la liste des emprunts d'un utilisateur
-     * @param id de l'utilisateur
      * @return la liste d'emprunt d'un utilisateur
      */
     @Override
-    public List<Emprunt> getListEmprunt(final Integer id) {
-        return empruntDao.getListEmprunt(id);
+    public List<Emprunt> getListEmprunt() {
+        return empruntDao.getListEmprunt();
+    }
+
+    @Override
+    public List<Emprunt> getListEmpruntUtilisateur(Integer id) {
+        List<Emprunt> vListEmprunt = this.getListEmprunt();
+        vListEmprunt = vListEmprunt.stream()
+                .filter(p -> p.getIdUtilisateur().equals(id))
+                .collect(Collectors.toList());
+        return vListEmprunt;
     }
 
     /**
@@ -56,9 +63,13 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @return un emprunt
      */
     @Override
-    public Emprunt getEmprunt(final Integer id) {
-        emprunt = empruntDao.getEmprunt(id);
-        return emprunt;
+    public Emprunt getEmprunt(final Integer id) throws NotFoundException{
+        List<Emprunt> vListEmprunt = this.getListEmprunt();
+        Emprunt vEmprunt = vListEmprunt.stream()
+                .filter(p -> p.getIdEmprunt().equals(id))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Aucun utilisateur correspondant au couple prenom/password fourni."));
+        return vEmprunt;
     }
 
     /**
