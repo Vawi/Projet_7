@@ -33,9 +33,9 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
         RowMapper<Emprunt> vRowMapper = new RowMapper<Emprunt>() {
             public Emprunt mapRow(final ResultSet pRS, final int pRowNum) throws SQLException {
                 Emprunt vEmprunt = new Emprunt(pRS.getInt("id_emprunt"));
-                vEmprunt.setDateDebut(pRS.getObject("date_debut", LocalDate.class));
-                vEmprunt.setDateFin(pRS.getObject("date_fin", LocalDate.class));
-                vEmprunt.setEtat(pRS.getString("mail"));
+                vEmprunt.setDateDebut(LocalDate.fromDateFields(pRS.getDate("date_debut")));
+                vEmprunt.setDateFin(LocalDate.fromDateFields(pRS.getDate("date_fin")));
+                vEmprunt.setEtat(pRS.getString("etat"));
                 vEmprunt.setIdOuvrage(pRS.getInt("id_emprunt"));
                 vEmprunt.setIdUtilisateur(pRS.getInt("id_utilisateur"));
                 return vEmprunt;
@@ -68,22 +68,20 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
     @Override
     public Emprunt emprunt(final Emprunt pEmprunt){
         String vSQL = "INSERT INTO public.emprunt " +
-                " (id_emprunt,\n" +
-                "id_utilisateur,\n" +
+                " (id_utilisateur,\n" +
                 "id_ouvrage,\n" +
                 "date_debut,\n" +
                 "date_fin,\n" +
                 "etat)\n" +
                 "VALUES\n" +
-                "(:idEmprunt, :idUtilisateur, :idOuvrage, :dateDebut, :dateFin, :etat)";
+                "(:idUtilisateur, :idOuvrage, :dateDebut, :dateFin, :etat)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
 
-                .addValue("idEmprunt", pEmprunt.getIdEmprunt())
                 .addValue("idUtilisateur", pEmprunt.getIdUtilisateur())
                 .addValue("idOuvrage", pEmprunt.getIdOuvrage())
-                .addValue("dateDebut", pEmprunt.getDateDebut())
-                .addValue("dateFin", pEmprunt.getDateFin())
+                .addValue("dateDebut", pEmprunt.getDateDebut().toDate())
+                .addValue("dateFin", pEmprunt.getDateFin().toDate())
                 .addValue("etat", pEmprunt.getEtat());
 
         KeyHolder holder = new GeneratedKeyHolder();

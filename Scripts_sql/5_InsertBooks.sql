@@ -25,7 +25,7 @@ VALUES
   4
 ),
 (
-  'L archipel du Goulag'
+  'L archipel du Goulag',
   'Soljénitsyne',
   1
 ),

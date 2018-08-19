@@ -46,7 +46,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @return la liste d'emprunt d'un utilisateur
      */
     @Override
-    public List<Emprunt> getListEmprunt(Integer id) {
+    public List<Emprunt> getListEmprunt(final Integer id) {
         return empruntDao.getListEmprunt(id);
     }
 
@@ -56,7 +56,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @return un emprunt
      */
     @Override
-    public Emprunt getEmprunt(Integer id) {
+    public Emprunt getEmprunt(final Integer id) {
         emprunt = empruntDao.getEmprunt(id);
         return emprunt;
     }
@@ -68,7 +68,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @param pOuvrage l'ouvrage emprunté
      */
     @Override
-    public void emprunt(Emprunt pEmprunt, Utilisateur pUtilisateur, Ouvrage pOuvrage) {
+    public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) {
         logger.info("un emprunt va etre creer");
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
@@ -94,7 +94,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @param pEmprunt l'emprunt a prolonger
      */
     @Override
-    public void prolongerEmprunt(Emprunt pEmprunt) {
+    public void prolongerEmprunt(final Emprunt pEmprunt) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
@@ -114,7 +114,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @param pEmprunt l'emprunt a clore
      */
     @Override
-    public void fermerEmprunt(Emprunt pEmprunt) throws NotFoundException {
+    public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
         Ouvrage ouvrage = ouvrageManager.getOuvrage(pEmprunt.getIdOuvrage());
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
@@ -131,7 +131,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
     }
 
     @Override
-    public void retardEmprunt(Emprunt pEmprunt) {
+    public void retardEmprunt(final Emprunt pEmprunt) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {

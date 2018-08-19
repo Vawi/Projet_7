@@ -2,6 +2,7 @@ package org.val.win.consumer.impl.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
@@ -44,15 +45,11 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
      */
     @Override
     public void ModifierNombreDispo(Ouvrage pOuvrage) {
-        String vSQL = "INSERT INTO public.ouvrage " +
-                "(nombre_disponible)\n" +
-                "VALUES\n" +
-                "(:nombreDisponible)";
+        String vSQL = "UPDATE public.ouvrage " +
+                "SET nombre_disponible =:nombreDispo " +
+                "WHERE id_ouvrage =:idOuvrage";
 
-        SqlParameterSource vParams = new MapSqlParameterSource()
-
-                .addValue("nombreDisponible", pOuvrage.getNombreDispo());
-
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pOuvrage);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
     }

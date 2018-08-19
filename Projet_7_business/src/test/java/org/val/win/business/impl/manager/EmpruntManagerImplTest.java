@@ -48,10 +48,24 @@ public class EmpruntManagerImplTest {
 
     @Test
     public void emprunt() throws NotFoundException {
+
+        Emprunt emprunt = new Emprunt();
+
         utilisateur = utilisateurManager.getUtilisateur("pnomtest", "mdptest");
+
         ouvrage = ouvrageManager.getOuvrage(15);
+
         empruntManager.emprunt(emprunt, utilisateur, ouvrage);
+
         Assertions.assertNotNull(empruntManager.getListEmprunt(utilisateur.getIdUtilisateur()));
+    }
+
+    @Test
+    public void getEmprunt() {
+
+        emprunt = empruntManager.getEmprunt(1);
+        Assertions.assertNotNull(emprunt);
+
     }
 
     @Test
