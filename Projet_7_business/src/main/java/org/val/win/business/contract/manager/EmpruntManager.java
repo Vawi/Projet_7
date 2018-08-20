@@ -11,11 +11,16 @@ import java.util.List;
 public interface EmpruntManager {
 
     /**
-     * Retour la liste des emprunts d'un utilisateur
-     * @return la liste d'emprunt d'un utilisateur
+     * Obtenir la liste des emprunts
+     * @return la liste d'emprunt
      */
     List<Emprunt> getListEmprunt();
 
+    /**
+     * Recuperer la liste d'emprunt d'un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return la liste d'emprunt d'un utilisateur
+     */
     List<Emprunt> getListEmpruntUtilisateur(Integer id);
 
     /**

@@ -32,8 +32,7 @@ public class OuvrageServiceImpl implements OuvrageService {
      */
     @Override
     public List<Ouvrage> getListOuvrage() {
-        List<Ouvrage> vListOuvrage;
-        vListOuvrage = managerFactory.getOuvrageManager().getListOuvrage();
+        List<Ouvrage> vListOuvrage = managerFactory.getOuvrageManager().getListOuvrage();
         return vListOuvrage;
     }
 
@@ -43,8 +42,7 @@ public class OuvrageServiceImpl implements OuvrageService {
      */
     @Override
     public List<Ouvrage> getListOuvrageDispo() {
-        List<Ouvrage> vListOuvrageDispo;
-        vListOuvrageDispo = managerFactory.getOuvrageManager().getListOuvrage();
+        List<Ouvrage> vListOuvrageDispo = managerFactory.getOuvrageManager().getListOuvrageDispo();
         return vListOuvrageDispo;
     }
 

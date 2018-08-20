@@ -40,14 +40,19 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
     private PlatformTransactionManager platformTransactionManager;
 
     /**
-     * Retour la liste des emprunts d'un utilisateur
-     * @return la liste d'emprunt d'un utilisateur
+     * Retour la liste des emprunts
+     * @return la liste d'emprunt
      */
     @Override
     public List<Emprunt> getListEmprunt() {
         return empruntDao.getListEmprunt();
     }
 
+    /**
+     * Retour la liste des emprunts d'un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return la liste d'emprunt d'un utilisateur
+     */
     @Override
     public List<Emprunt> getListEmpruntUtilisateur(Integer id) {
         List<Emprunt> vListEmprunt = this.getListEmprunt();
@@ -141,6 +146,10 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
         });
     }
 
+    /**
+     * Changer l'etat d'un emprunt en retard
+     * @param pEmprunt l'emprunt dont l'ouvrage n'a pas été rendu
+     */
     @Override
     public void retardEmprunt(final Emprunt pEmprunt) {
         TransactionTemplate vTransactionTemplate
