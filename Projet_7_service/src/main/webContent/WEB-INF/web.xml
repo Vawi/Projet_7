@@ -16,9 +16,31 @@ Inc.//DTD Web Application 2.3//EN"
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    <servlet>
+        <servlet-name>OuvrageService</servlet-name>
+        <servlet-class>
+            com.sun.xml.ws.transport.http.servlet.WSServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>UtilisateurService</servlet-name>
+        <servlet-class>
+            com.sun.xml.ws.transport.http.servlet.WSServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
     <servlet-mapping>
         <servlet-name>EmpruntService</servlet-name>
-        <url-pattern>/webservice</url-pattern>
+        <url-pattern>/emprunt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OuvrageService</servlet-name>
+        <url-pattern>/ouvrage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UtilisateurService</servlet-name>
+        <url-pattern>/utilisateur</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>120</session-timeout>
