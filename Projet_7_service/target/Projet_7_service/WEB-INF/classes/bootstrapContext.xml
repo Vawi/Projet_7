@@ -11,5 +11,6 @@
     <import resource="classpath:/webservice/webserviceContext.xml" />
     <import resource="classpath:/consumerContext.xml" />
     <import resource="classpath:/businessContext.xml" />
+    <import resource="classpath:/webservice/webserviceContext.xml" />
 
 </beans>

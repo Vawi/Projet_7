@@ -19,12 +19,12 @@ public interface OuvrageService {
      * @return une liste d'ouvrage
      */
     @WebMethod
-    List<Ouvrage> getListOuvrage();
+    Object[] getListOuvrage();
 
     /**
      * Obtenir la liste des ouvrages disponible
      * @return la liste des ouvrages disponible
      */
     @WebMethod
-    List<Ouvrage> getListOuvrageDispo();
+    Object[] getListOuvrageDispo();
 }

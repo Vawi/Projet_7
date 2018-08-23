@@ -7,7 +7,7 @@
         <!-- Chargement du fichier properties contenant
             la configuration de la datasource vers DB_TICKET  -->
         <bean id="dataSourceP7Configuration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-            <property name="location" value="file:${application.home}/conf/db-P7.properties"/>
+            <property name="location" value="classpath:db-P7.properties"/>
         </bean>
 
         <!-- Création de la datasource "dataSourceTicket" -->

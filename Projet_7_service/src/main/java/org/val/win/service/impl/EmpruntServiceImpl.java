@@ -1,6 +1,7 @@
 package org.val.win.service.impl;
 
 import org.val.win.business.contract.ManagerFactory;
+import org.val.win.business.contract.manager.EmpruntManager;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
@@ -8,7 +9,6 @@ import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.EmpruntService;
 
 import javax.inject.Inject;
-import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 /**
@@ -21,7 +21,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      * Récupérer manager factory
      */
     @Inject
-    private ManagerFactory managerFactory;
+    private EmpruntManager empruntManager;
 
     private Emprunt emprunt;
 
@@ -33,7 +33,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Override
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage){
-        managerFactory.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
+        empruntManager.emprunt(pEmprunt, pUtilisateur, pOuvrage);
     }
 
     /**
@@ -42,7 +42,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Override
     public void prolongationEmprunt(final Emprunt pEmprunt) {
-        managerFactory.getEmpruntManager().prolongerEmprunt(pEmprunt);
+        empruntManager.prolongerEmprunt(pEmprunt);
     }
 
     /**
@@ -51,7 +51,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Override
     public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
-        managerFactory.getEmpruntManager().fermerEmprunt(pEmprunt);
+        empruntManager.fermerEmprunt(pEmprunt);
     }
 
     /**
@@ -60,7 +60,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Override
     public void retardEmprunt(final Emprunt pEmprunt) {
-        managerFactory.getEmpruntManager().retardEmprunt(pEmprunt);
+        empruntManager.retardEmprunt(pEmprunt);
     }
 
 }
