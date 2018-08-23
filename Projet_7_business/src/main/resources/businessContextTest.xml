@@ -7,8 +7,6 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.val.win"/>
 
-    <import resource="classpath:consumerContext.xml" />
-
     <bean id="txManagerP7" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSourceP7"/>
     </bean>

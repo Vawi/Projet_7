@@ -10,7 +10,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-
     <groupId>org.val.win</groupId>
     <artifactId>Projet_7_service</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -33,6 +32,11 @@
             <groupId>org.val.win</groupId>
             <artifactId>Projet_7_business</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.val.win</groupId>
+            <artifactId>Projet_7_consumer</artifactId>
         </dependency>
 
         <dependency>

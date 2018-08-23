@@ -42,7 +42,7 @@ public class OuvrageServiceImpl implements OuvrageService {
      * @return la liste des ouvrages disponibles
      */
     @Override
-    public Object[]getListOuvrageDispo() {
+    public Object[] getListOuvrageDispo() {
         List<Ouvrage> vListOuvrageDispo = ouvrageManager.getListOuvrageDispo();
         Object[] vArrayOuvrage = vListOuvrageDispo.toArray();
         return vArrayOuvrage;

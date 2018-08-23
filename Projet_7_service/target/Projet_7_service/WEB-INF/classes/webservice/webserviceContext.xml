@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 
-    <beans>
+
+    <jee:jndi-lookup id="dataSourceP7" jndi-name="jdbc/p7"
+                     expected-type="javax.sql.DataSource" />
+
         <!-- Chargement du fichier properties contenant
-            la configuration de la datasource vers DB_TICKET  -->
+            la configuration de la datasource vers DB_TICKET
         <bean id="dataSourceP7Configuration" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
             <property name="location" value="classpath:db-P7.properties"/>
         </bean>
 
-        <!-- Création de la datasource "dataSourceTicket" -->
+        Création de la datasource "dataSourceTicket"
 
         <bean id="dataSourceP7"
               class="org.apache.commons.dbcp2.BasicDataSourceFactory"
@@ -19,7 +22,6 @@
             <constructor-arg ref="dataSourceP7Configuration"/>
 
         </bean>
-
-    </beans>
+        -->
 
 </beans>
