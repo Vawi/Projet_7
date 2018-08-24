@@ -1,6 +1,5 @@
 package org.val.win.service.impl;
 
-import org.val.win.business.contract.ManagerFactory;
 import org.val.win.business.contract.manager.UtilisateurManager;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;

@@ -1,6 +1,5 @@
 package org.val.win.service.impl;
 
-import org.val.win.business.contract.ManagerFactory;
 import org.val.win.business.contract.manager.EmpruntManager;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
