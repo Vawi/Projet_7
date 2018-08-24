@@ -17,6 +17,13 @@ import javax.jws.soap.SOAPBinding;
 public interface EmpruntService {
 
     /**
+     * Methode servant a obtenir les emprunts d'un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return une liste d'emprunt
+     */
+    Object[] getListEmpruntUtilisateur(final Integer id);
+
+    /**
      * Creer un emprunt
      * @param pEmprunt le nouvel emprunt
      * @param pUtilisateur l'utilisateur qui emprunte

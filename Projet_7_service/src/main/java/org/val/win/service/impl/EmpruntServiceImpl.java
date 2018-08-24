@@ -10,6 +10,7 @@ import org.val.win.service.contract.EmpruntService;
 
 import javax.inject.Inject;
 import javax.jws.WebService;
+import java.util.List;
 
 /**
  * Implementation du webservice de l'emprunt
@@ -24,6 +25,18 @@ public class EmpruntServiceImpl implements EmpruntService {
     private EmpruntManager empruntManager;
 
     private Emprunt emprunt;
+
+    /**
+     * Methode servant a obtenir la liste d'emprunt d'un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return les emprunts d'un utilisateur
+     */
+    @Override
+    public Object[] getListEmpruntUtilisateur(final Integer id) {
+        List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(id);
+        Object[] vArrayEmprunt = vListEmprunt.toArray();
+        return vArrayEmprunt;
+    }
 
     /**
      * Creer un emprunt

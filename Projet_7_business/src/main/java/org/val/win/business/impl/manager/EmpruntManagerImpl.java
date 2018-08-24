@@ -120,7 +120,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                 LocalDate dateFin = pEmprunt.getDateFin();
                 pEmprunt.setDateFin(dateFin.plusWeeks(4));
                 pEmprunt.setEtat(EmpruntEtat.PROLONGE.toString());
-                empruntDao.emprunt(pEmprunt);
+                empruntDao.prolongerEmprunt(pEmprunt);
             }
         });
     }
@@ -140,7 +140,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
                 pEmprunt.setEtat(EmpruntEtat.RENDU.toString());
                 ouvrage.setNombreDispo(+1);
-                empruntDao.emprunt(pEmprunt);
+                empruntDao.ChangerEtatEmprunt(pEmprunt);
                 ouvrageManager.ModifierNombreDispo(ouvrage);
             }
         });
@@ -159,7 +159,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pEmprunt.setEtat(EmpruntEtat.RETARD.toString());
-                empruntDao.emprunt(pEmprunt);
+                empruntDao.ChangerEtatEmprunt(pEmprunt);
             }
         });
     }
