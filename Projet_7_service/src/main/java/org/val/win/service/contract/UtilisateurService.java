@@ -5,12 +5,13 @@ import org.val.win.model.bean.Utilisateur;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
+import javax.jws.soap.SOAPBinding.Style;
 
 /**
  * Interface de la classe UtilisateurServiceImpl
  */
 @WebService
-@SOAPBinding(style = SOAPBinding.Style.RPC)
+@SOAPBinding(style = Style.RPC)
 public interface UtilisateurService {
 
     /**

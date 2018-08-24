@@ -1,17 +1,16 @@
 package org.val.win.service.contract;
 
-import org.val.win.model.bean.Ouvrage;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
-import java.util.List;
+import javax.jws.soap.SOAPBinding.Style;
 
 /**
  * Interface de la classe OuvrageServiceImpl
  */
 @WebService
-@SOAPBinding(style = SOAPBinding.Style.RPC)
+@SOAPBinding(style = Style.RPC)
 public interface OuvrageService {
 
     /**
