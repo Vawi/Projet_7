@@ -8,6 +8,7 @@ import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.EmpruntService;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.jws.WebService;
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * Implementation du webservice de l'emprunt
  */
 @WebService(endpointInterface = "org.val.win.service.contract.EmpruntService")
+@Named
 public class EmpruntServiceImpl implements EmpruntService {
 
     /**

@@ -35,11 +35,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.val.win</groupId>
-            <artifactId>Projet_7_consumer</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>RELEASE</version>
@@ -92,11 +87,6 @@
         <dependency>
             <groupId>wsdl4j</groupId>
             <artifactId>wsdl4j</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-ws-core</artifactId>
         </dependency>
 
     </dependencies>

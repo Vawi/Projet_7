@@ -5,6 +5,7 @@ import org.val.win.model.bean.Ouvrage;
 import org.val.win.service.contract.OuvrageService;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.jws.WebService;
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * implementation du webservice des ouvrages
  */
 @WebService(endpointInterface = "org.val.win.service.contract.OuvrageService")
+@Named
 public class OuvrageServiceImpl implements OuvrageService {
 
     /**

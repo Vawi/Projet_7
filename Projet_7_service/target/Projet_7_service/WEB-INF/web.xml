@@ -10,17 +10,22 @@ Inc.//DTD Web Application 2.3//EN"
 
     <display-name>P7</display-name>
 
+    <!-- Initialisation de Spring a travers une classe -->
+
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>org.val.win.service.webapp.ConfigurationSpring</param-value>
+        <param-value>classpath:/bootstrapContext.xml</param-value>
     </context-param>
+    <!--
     <context-param>
         <param-name>contextClass</param-name>
         <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-    </context-param>
+    </context-param> -->
+
+    <!-- Base de donnée -->
 
     <resource-ref>
         <res-ref-name>jdbc/p7</res-ref-name>
@@ -29,6 +34,7 @@ Inc.//DTD Web Application 2.3//EN"
 
     </resource-ref>
 
+    <!-- Mapping du webservice -->
     <listener>
         <listener-class>
             com.sun.xml.ws.transport.http.servlet.WSServletContextListener

@@ -6,12 +6,14 @@ import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.UtilisateurService;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.jws.WebService;
 
 /**
  * Implementation du webservice pour les utilisateur
  */
 @WebService(endpointInterface = "org.val.win.service.contract.UtilisateurService")
+@Named
 public class UtilisateurServiceImpl implements UtilisateurService {
 
     /**
