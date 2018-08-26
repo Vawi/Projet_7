@@ -82,11 +82,18 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
     @Override
     public void prolongerEmprunt(final Emprunt pEmprunt){
         String vSQL = "UPDATE public.emprunt " +
-                "SET date_fin =:dateFin," +
-                "etat =: etat " +
-                "WHERE id_emprunt =:idEmprunt";
-        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pEmprunt);
-        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+                "SET date_fin = :dateFin," +
+                "etat = :etat " +
+                "WHERE id_emprunt = :idEmprunt";
+
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("dateFin", pEmprunt.getDateFin().toDate());
+        vParams.addValue("etat", pEmprunt.getEtat());
+        vParams.addValue("idEmprunt", pEmprunt.getIdEmprunt());
+
+        NamedParameterJdbcTemplate vJdbcTemplate =
+                new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
     }
 
@@ -98,8 +105,8 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
     @Override
     public void ChangerEtatEmprunt(final Emprunt pEmprunt){
         String vSQL = "UPDATE public.emprunt " +
-                "SET etat =: etat " +
-                "WHERE id_emprunt =:idEmprunt";
+                "SET etat = :etat " +
+                "WHERE id_emprunt = :idEmprunt";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pEmprunt);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);

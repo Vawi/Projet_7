@@ -22,19 +22,18 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
      */
     @Override
     public List<Ouvrage> getListOuvrage() {
-        String vSQL = "SELECT * FROM public.ouvrage";
+        String vSQL = "SELECT * FROM public.ouvrage ";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Ouvrage> vRowMapper = new RowMapper<Ouvrage>() {
             public Ouvrage mapRow(final ResultSet pRS, final int pRowNum) throws SQLException {
                 Ouvrage vOuvrage = new Ouvrage(pRS.getInt("id_ouvrage"));
+                vOuvrage.setNomOuvrage(pRS.getString("titre"));
                 vOuvrage.setNombreDispo(pRS.getInt("nombre_disponible"));
                 vOuvrage.setAuteur(pRS.getString("auteur"));
-                vOuvrage.setNomOuvrage(pRS.getString("titre"));
                 return vOuvrage;
             }
         };
         List<Ouvrage> vListOuvrage = vJdbcTemplate.query(vSQL, vRowMapper);
-
         return vListOuvrage;
     }
 
@@ -45,8 +44,8 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
     @Override
     public void ModifierNombreDispo(Ouvrage pOuvrage) {
         String vSQL = "UPDATE public.ouvrage " +
-                "SET nombre_disponible =:nombreDispo " +
-                "WHERE id_ouvrage =:idOuvrage";
+                "SET nombre_disponible = :nombreDispo " +
+                "WHERE id_ouvrage = :idOuvrage";
 
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pOuvrage);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());

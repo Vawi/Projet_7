@@ -25,19 +25,19 @@ public class EmpruntServiceImpl implements EmpruntService {
     @Inject
     private EmpruntManager empruntManager;
 
-    private Emprunt emprunt;
-
-    /**
+    /*
      * Methode servant a obtenir la liste d'emprunt d'un utilisateur
-     * @param id l'id de l'utilisateur
+     * @param pUtilisateur l'id de l'utilisateur
      * @return les emprunts d'un utilisateur
-     */
+
     @Override
-    public Object[] getListEmpruntUtilisateur(final Integer id) {
-        List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(id);
+    public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
+        List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur());
         Object[] vArrayEmprunt = vListEmprunt.toArray();
         return vArrayEmprunt;
     }
+    */
+
 
     /**
      * Creer un emprunt

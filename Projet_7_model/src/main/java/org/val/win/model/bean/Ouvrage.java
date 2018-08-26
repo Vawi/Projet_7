@@ -127,10 +127,10 @@ public class Ouvrage {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Ouvrage id de l'ouvrage=").append(idOuvrage)
-                .append(vSEP).append("nom=\"").append(nomOuvrage).append('"')
-                .append(vSEP).append("prenom=\"").append(auteur).append('"')
-                .append(vSEP).append("mail=\"").append(nombreDispo).append('"')
+                .append("Ouvrage Id de l'ouvrage=").append(idOuvrage)
+                .append(vSEP).append("titre=\"").append(nomOuvrage).append('"')
+                .append(vSEP).append("auteur=\"").append(auteur).append('"')
+                .append(vSEP).append("nombre d'exemplaire disponible=\"").append(nombreDispo).append('"')
                 .append("}");
         return vStB.toString();
     }

@@ -17,12 +17,14 @@ import javax.jws.soap.SOAPBinding.Style;
 @SOAPBinding(style = Style.RPC)
 public interface EmpruntService {
 
-    /**
+    /*
      * Methode servant a obtenir les emprunts d'un utilisateur
-     * @param id l'id de l'utilisateur
+     * @param pUtilisateur l'id de l'utilisateur
      * @return une liste d'emprunt
-     */
-    Object[] getListEmpruntUtilisateur(final Integer id);
+
+    @WebMethod
+    Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur);
+    */
 
     /**
      * Creer un emprunt
