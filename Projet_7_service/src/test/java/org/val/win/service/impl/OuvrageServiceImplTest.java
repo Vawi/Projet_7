@@ -10,6 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 import org.val.win.model.bean.Ouvrage;
+import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.OuvrageService;
 
 import java.util.List;
@@ -25,8 +26,6 @@ public class OuvrageServiceImplTest {
     @Autowired
     private OuvrageService ouvrageService;
 
-    private Ouvrage ouvrage;
-
     @Test
     public void getListOuvrage() {
 
@@ -34,14 +33,11 @@ public class OuvrageServiceImplTest {
         Assertions.assertTrue(arrayOuvrage.length == 30);
     }
 
-    /*@Test
-    public void getListOuvrageDispo() throws NotFoundException {
-        try {
-            ouvrage = ouvrageService.getListOuvrageDispo();
-        } catch (Exception e) {
-            assertTrue(e instanceof NotFoundException);
-        }
-        Assertions.assertNotNull(ouvrage);
+    @Test
+    public void getListOuvrageDispo() {
+
+        Object[] listOuvrageDispo = ouvrageService.getListOuvrageDispo();
+        Assertions.assertNotNull(listOuvrageDispo);
     }
-    */
+
 }
