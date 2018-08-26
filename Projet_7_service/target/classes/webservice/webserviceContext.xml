@@ -4,26 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 
 
-    <beans>
-        <!-- Chargement du fichier properties contenant
-            la configuration de la datasource vers DB_TICKET  -->
-        <bean id="dataSourceP7conf" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-            <property name="location" value="classpath:db-P7.properties"/>
-        </bean>
-        <!-- Création de la datasource "dataSourceTicket" -->
-        <bean id="dataSourceP7"
-              class="org.apache.commons.dbcp2.BasicDataSourceFactory"
-              factory-method="createDataSource"
-              destroy-method="close">
-            <constructor-arg ref="dataSourceP7conf"/>
-        </bean>
-    </beans>
 
-    <!--
     <jee:jndi-lookup id="dataSourceP7" jndi-name="jdbc/p7"
-                     expected-type="javax.sql.DataSource" /> -->
-
-
+                     expected-type="javax.sql.DataSource" />
 
 
 </beans>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Projet_7_business/Projet_7_business.iml" filepath="$PROJECT_DIR$/Projet_7_business/Projet_7_business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projet_7_consumer/Projet_7_consumer.iml" filepath="$PROJECT_DIR$/Projet_7_consumer/Projet_7_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projet_7_model/Projet_7_model.iml" filepath="$PROJECT_DIR$/Projet_7_model/Projet_7_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projet_7_service/Projet_7_service.iml" filepath="$PROJECT_DIR$/Projet_7_service/Projet_7_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projet_7_technical/Projet_7_technical.iml" filepath="$PROJECT_DIR$/Projet_7_technical/Projet_7_technical.iml" />
+    </modules>
+  </component>
+</project>

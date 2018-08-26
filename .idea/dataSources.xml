@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="p7@localhost" uuid="d07b6ff5-f94d-4cc6-8ac4-9d309a0f72af">
+    <data-source source="LOCAL" name="jdbc/p7" uuid="122f6ca9-2208-4527-bf7c-5a5fe640c9db">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Tomcat.Resource
+
+/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/webapp/META-INF/context.xml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/p7</jdbc-url>
     </data-source>

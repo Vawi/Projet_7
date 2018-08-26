@@ -84,10 +84,7 @@
             <version>2.2.10</version>
         </dependency>
 
-        <dependency>
-            <groupId>wsdl4j</groupId>
-            <artifactId>wsdl4j</artifactId>
-        </dependency>
+
 
     </dependencies>
 
