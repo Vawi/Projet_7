@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Implementation du webservice de l'emprunt
  */
-@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService")
+@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService", serviceName = "Emprunt")
 @Named
 public class EmpruntServiceImpl implements EmpruntService {
 
@@ -25,18 +25,18 @@ public class EmpruntServiceImpl implements EmpruntService {
     @Inject
     private EmpruntManager empruntManager;
 
-    /**
+    /*
      * Methode servant a obtenir la liste d'emprunt d'un utilisateur
      * @param pUtilisateur l'id de l'utilisateur
      * @return les emprunts d'un utilisateur
-     */
 
-    @Override
+
+    /*@Override
     public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
         List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur());
         Object[] vArrayEmprunt = vListEmprunt.toArray();
         return vArrayEmprunt;
-    }
+    }*/
 
 
     /**

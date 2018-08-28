@@ -50,7 +50,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @return la liste d'emprunt d'un utilisateur
      */
     @Override
-    public List<Emprunt> getListEmpruntUtilisateur(Integer id) {
+    public List<Emprunt> getListEmpruntUtilisateur(final Integer id) {
         List<Emprunt> vListEmprunt = this.getListEmprunt();
         vListEmprunt = vListEmprunt.stream()
                 .filter(p -> p.getIdUtilisateur().equals(id))

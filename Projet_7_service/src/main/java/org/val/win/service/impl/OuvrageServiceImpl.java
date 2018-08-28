@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * implementation du webservice des ouvrages
  */
-@WebService(endpointInterface = "org.val.win.service.contract.OuvrageService")
+@WebService(endpointInterface = "org.val.win.service.contract.OuvrageService", serviceName = "Ouvrage")
 @Named
 public class OuvrageServiceImpl implements OuvrageService {
 

@@ -12,7 +12,7 @@ import javax.jws.WebService;
 /**
  * Implementation du webservice pour les utilisateur
  */
-@WebService(endpointInterface = "org.val.win.service.contract.UtilisateurService")
+@WebService(endpointInterface = "org.val.win.service.contract.UtilisateurService", serviceName = "Utilisateur")
 @Named
 public class UtilisateurServiceImpl implements UtilisateurService {
 

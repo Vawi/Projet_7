@@ -21,7 +21,7 @@ public interface EmpruntManager {
      * @param id l'id de l'utilisateur
      * @return la liste d'emprunt d'un utilisateur
      */
-    List<Emprunt> getListEmpruntUtilisateur(Integer id);
+    List<Emprunt> getListEmpruntUtilisateur(final Integer id);
 
     /**
      * Récupérer un emprunt
