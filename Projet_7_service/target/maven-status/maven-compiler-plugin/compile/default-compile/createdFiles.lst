@@ -1,0 +1,5 @@
+org/val/win/service/contract/OuvrageService.class
+org/val/win/service/impl/UtilisateurServiceImpl.class
+org/val/win/service/contract/UtilisateurService.class
+org/val/win/service/contract/EmpruntService.class
+org/val/win/service/impl/OuvrageServiceImpl.class

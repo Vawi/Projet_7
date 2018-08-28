@@ -1,6 +1,7 @@
 package org.val.win.service.contract;
 
 import org.val.win.model.bean.Utilisateur;
+import org.val.win.model.exception.NotFoundException;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -21,5 +22,5 @@ public interface UtilisateurService {
      * @return un utilisateur
      */
     @WebMethod
-    Utilisateur utilisateurLogin(final String pseudonyme, final String mdp);
+    Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) throws NotFoundException;
 }

@@ -31,12 +31,10 @@ public class UtilisateurServiceImpl implements UtilisateurService {
      * @return un utilisateur
      */
     @Override
-    public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) {
-        try {
-            utilisateur = utilisateurManager.getUtilisateur(pseudonyme, mdp);
-        } catch (NotFoundException pEx) {
-            System.out.println("Utilisateur non trouvé");
-        }
+    public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) throws NotFoundException {
+
+        utilisateur = utilisateurManager.getUtilisateur(pseudonyme, mdp);
+
         return utilisateur;
     }
 }

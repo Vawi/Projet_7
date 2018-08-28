@@ -21,7 +21,7 @@ import org.val.win.model.exception.NotFoundException;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:businessContextTest.xml"})
+@ContextConfiguration(locations= "classpath:businessContextTest.xml")
 @Transactional
 @Rollback(true)
 public class OuvrageManagerImplTest {

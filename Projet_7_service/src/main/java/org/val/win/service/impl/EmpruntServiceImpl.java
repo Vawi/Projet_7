@@ -25,10 +25,11 @@ public class EmpruntServiceImpl implements EmpruntService {
     @Inject
     private EmpruntManager empruntManager;
 
-    /*
+    /**
      * Methode servant a obtenir la liste d'emprunt d'un utilisateur
      * @param pUtilisateur l'id de l'utilisateur
      * @return les emprunts d'un utilisateur
+     */
 
     @Override
     public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
@@ -36,7 +37,6 @@ public class EmpruntServiceImpl implements EmpruntService {
         Object[] vArrayEmprunt = vListEmprunt.toArray();
         return vArrayEmprunt;
     }
-    */
 
 
     /**

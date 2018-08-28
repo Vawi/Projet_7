@@ -12,8 +12,6 @@ import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.bean.EmpruntEtat;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
@@ -26,8 +24,6 @@ import java.util.stream.Collectors;
  */
 @Named
 public class EmpruntManagerImpl extends AbstractManager implements EmpruntManager {
-
-    private static final Logger logger = LogManager.getLogger(EmpruntManagerImpl.class);
 
     @Inject
     private EmpruntDao empruntDao;
@@ -85,7 +81,6 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      */
     @Override
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) {
-        logger.info("un emprunt va etre creer");
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
@@ -102,7 +97,6 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                 ouvrageManager.ModifierNombreDispo(pOuvrage);
             }
         });
-        logger.info("un emprunt est envoyé vers la DB" + pEmprunt);
     }
 
     /**
