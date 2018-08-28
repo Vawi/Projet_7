@@ -25,7 +25,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>5.0.8.RELEASE</spring.version>
-    <maven.test.skip>true</maven.test.skip>
   </properties>
 
   <modules>
