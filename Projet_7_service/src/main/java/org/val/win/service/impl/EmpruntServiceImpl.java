@@ -13,12 +13,11 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import java.util.List;
 
 /**
  * Implementation du webservice de l'emprunt
  */
-@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService", serviceName = "Emprunt")
+@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService")
 @Named
 public class EmpruntServiceImpl implements EmpruntService {
 
@@ -33,7 +32,6 @@ public class EmpruntServiceImpl implements EmpruntService {
      * @param pUtilisateur l'id de l'utilisateur
      * @return les emprunts d'un utilisateur
      */
-
     @Override
     @WebMethod
     public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {

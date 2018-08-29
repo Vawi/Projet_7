@@ -111,8 +111,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
             @Override
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
-                LocalDate dateFin = pEmprunt.getDateFin();
-                pEmprunt.setDateFin(dateFin.plusWeeks(4));
+                pEmprunt.setDateFin(pEmprunt.getDateFin().plusWeeks(4));
                 pEmprunt.setEtat(EmpruntEtat.PROLONGE.toString());
                 empruntDao.prolongerEmprunt(pEmprunt);
             }

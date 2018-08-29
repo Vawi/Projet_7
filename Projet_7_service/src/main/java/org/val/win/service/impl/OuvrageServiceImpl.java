@@ -14,7 +14,7 @@ import javax.jws.WebService;
 /**
  * implementation du webservice des ouvrages
  */
-@WebService(endpointInterface = "org.val.win.service.contract.OuvrageService", serviceName = "Ouvrage")
+@WebService(endpointInterface = "org.val.win.service.contract.OuvrageService")
 @Named
 public class OuvrageServiceImpl implements OuvrageService {
 
