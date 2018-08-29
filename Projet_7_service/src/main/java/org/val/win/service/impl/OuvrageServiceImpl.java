@@ -25,11 +25,6 @@ public class OuvrageServiceImpl implements OuvrageService {
     private OuvrageManager ouvrageManager;
 
     /**
-     * Objet Ouvrage
-     */
-    private Ouvrage ouvrage;
-
-    /**
      * Methode pour obtenir la liste des ouvrages
      * @return la liste complète des ouvrages
      */
