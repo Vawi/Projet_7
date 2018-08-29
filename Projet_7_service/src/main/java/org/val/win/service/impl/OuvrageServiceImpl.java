@@ -1,13 +1,15 @@
 package org.val.win.service.impl;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.val.win.business.contract.manager.OuvrageManager;
+import org.val.win.business.impl.manager.OuvrageManagerImpl;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.service.contract.OuvrageService;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.jws.WebMethod;
 import javax.jws.WebService;
-import java.util.List;
 
 /**
  * implementation du webservice des ouvrages
@@ -32,9 +34,12 @@ public class OuvrageServiceImpl implements OuvrageService {
      * @return la liste complète des ouvrages
      */
     @Override
+    @WebMethod
     public Object[] getListOuvrage() {
-        List<Ouvrage> vListOuvrage = ouvrageManager.getListOuvrage();
-        Object[] vArrayOuvrage = vListOuvrage.toArray();
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("bootstrapContext.xml");
+        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
+        Object[] vArrayOuvrage = ouvrageManager.getListOuvrage().toArray();
         return vArrayOuvrage;
     }
 
@@ -43,9 +48,12 @@ public class OuvrageServiceImpl implements OuvrageService {
      * @return la liste des ouvrages disponibles
      */
     @Override
+    @WebMethod
     public Object[] getListOuvrageDispo() {
-        List<Ouvrage> vListOuvrageDispo = ouvrageManager.getListOuvrageDispo();
-        Object[] vArrayOuvrage = vListOuvrageDispo.toArray();
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("bootstrapContext.xml");
+        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
+        Object[] vArrayOuvrage = ouvrageManager.getListOuvrageDispo().toArray();
         return vArrayOuvrage;
     }
 
