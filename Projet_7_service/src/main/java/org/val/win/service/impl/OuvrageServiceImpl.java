@@ -3,7 +3,6 @@ package org.val.win.service.impl;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.val.win.business.contract.manager.OuvrageManager;
 import org.val.win.business.impl.manager.OuvrageManagerImpl;
-import org.val.win.model.bean.Ouvrage;
 import org.val.win.service.contract.OuvrageService;
 
 import javax.inject.Inject;
