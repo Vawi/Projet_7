@@ -20,17 +20,17 @@ public class OuvrageServiceImplTest {
     @Autowired
     private OuvrageService ouvrageService;
 
-    @Test
+    /*@Test
     public void getListOuvrage() {
 
         Object[] arrayOuvrage = ouvrageService.getListOuvrage();
         Assertions.assertTrue(arrayOuvrage.length == 30);
-    }
+    } */
 
     @Test
     public void getListOuvrageDispo() {
 
-        Object[] listOuvrageDispo = ouvrageService.getListOuvrageDispo();
+        Object[] listOuvrageDispo = ouvrageService.getListDispo();
         Assertions.assertNotNull(listOuvrageDispo);
     }
 

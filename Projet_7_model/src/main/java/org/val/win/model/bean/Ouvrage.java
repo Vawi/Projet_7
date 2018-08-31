@@ -134,7 +134,4 @@ public class Ouvrage {
                 .append("}");
         return vStB.toString();
     }
-
-
-
 }

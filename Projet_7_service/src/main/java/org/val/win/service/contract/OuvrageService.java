@@ -1,5 +1,6 @@
 package org.val.win.service.contract;
 
+import org.val.win.model.bean.Ouvrage;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -25,5 +26,5 @@ public interface OuvrageService {
      * @return la liste des ouvrages disponible
      */
     @WebMethod
-    Object[] getListOuvrageDispo();
+    Object[] getListDispo();
 }

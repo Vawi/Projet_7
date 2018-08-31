@@ -123,7 +123,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      */
     @Override
     public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
-        //Ouvrage ouvrage = ouvrageManager.getOuvrage(pEmprunt.getIdOuvrage());
+        Ouvrage ouvrage = ouvrageManager.getOuvrage(pEmprunt.getIdOuvrage());
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
@@ -131,9 +131,9 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pEmprunt.setEtat(EmpruntEtat.RENDU.toString());
-                //ouvrage.setNombreDispo(+1);
+                ouvrage.setNombreDispo(+1);
                 empruntDao.ChangerEtatEmprunt(pEmprunt);
-                //ouvrageManager.ModifierNombreDispo(ouvrage);
+                ouvrageManager.ModifierNombreDispo(ouvrage);
             }
         });
     }

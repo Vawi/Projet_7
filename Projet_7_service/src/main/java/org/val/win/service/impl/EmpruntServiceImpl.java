@@ -2,7 +2,9 @@ package org.val.win.service.impl;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.val.win.business.contract.manager.EmpruntManager;
+import org.val.win.business.contract.manager.OuvrageManager;
 import org.val.win.business.impl.manager.EmpruntManagerImpl;
+import org.val.win.business.impl.manager.OuvrageManagerImpl;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
@@ -13,6 +15,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
+import java.util.List;
 
 /**
  * Implementation du webservice de l'emprunt
@@ -26,6 +29,20 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Inject
     private EmpruntManager empruntManager;
+
+    /**
+     * Recuperer la liste des emprunts
+     * @return une liste d'emprunt
+     */
+    @Override
+    @WebMethod
+    public Object[] getListEmprunt() {
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("bootstrapContext.xml");
+        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
+        Object[] vArrayEmprunt = empruntManager.getListEmprunt().toArray();
+        return vArrayEmprunt;
+    }
 
     /**
      * Methode servant a obtenir la liste d'emprunt d'un utilisateur
@@ -96,5 +113,4 @@ public class EmpruntServiceImpl implements EmpruntService {
         empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
         empruntManager.retardEmprunt(pEmprunt);
     }
-
 }

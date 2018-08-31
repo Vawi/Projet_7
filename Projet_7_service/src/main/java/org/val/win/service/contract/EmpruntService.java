@@ -18,6 +18,13 @@ import javax.jws.soap.SOAPBinding.Style;
 public interface EmpruntService {
 
     /**
+     * Recuperer la liste des emprunts
+     * @return la liste des emprunts
+     */
+    @WebMethod
+    Object[] getListEmprunt();
+
+    /**
      * Methode servant a obtenir les emprunts d'un utilisateur
      * @param pUtilisateur l'id de l'utilisateur
      * @return une liste d'emprunt
@@ -54,4 +61,5 @@ public interface EmpruntService {
      */
     @WebMethod
     void retardEmprunt(final Emprunt pEmprunt);
+
 }
