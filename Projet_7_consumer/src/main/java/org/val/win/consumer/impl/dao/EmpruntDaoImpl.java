@@ -35,7 +35,7 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
                 vEmprunt.setDateDebut(LocalDate.fromDateFields(pRS.getDate("date_debut")));
                 vEmprunt.setDateFin(LocalDate.fromDateFields(pRS.getDate("date_fin")));
                 vEmprunt.setEtat(pRS.getString("etat"));
-                vEmprunt.setIdOuvrage(pRS.getInt("id_emprunt"));
+                vEmprunt.setIdOuvrage(pRS.getInt("id_ouvrage"));
                 vEmprunt.setIdUtilisateur(pRS.getInt("id_utilisateur"));
                 return vEmprunt;
             }

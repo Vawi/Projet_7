@@ -36,7 +36,7 @@ public interface EmpruntManager {
      * @param pUtilisateur l'utilisateur qui emprunte
      * @param pOuvrage l'ouvrage emprunté
      */
-    void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage);
+    void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException;
 
     /**
      * Prolongation d'un emprunt

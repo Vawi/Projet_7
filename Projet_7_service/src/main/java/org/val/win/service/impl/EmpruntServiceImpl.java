@@ -68,7 +68,7 @@ public class EmpruntServiceImpl implements EmpruntService {
      */
     @Override
     @WebMethod
-    public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage){
+    public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("bootstrapContext.xml");
         empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");

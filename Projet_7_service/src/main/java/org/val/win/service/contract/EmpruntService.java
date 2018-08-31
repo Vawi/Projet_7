@@ -39,7 +39,7 @@ public interface EmpruntService {
      * @param pOuvrage l'ouvrage emprunté
      */
     @WebMethod
-    void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage);
+    void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException;
 
     /**
      * Prolonger un emprunt

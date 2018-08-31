@@ -80,21 +80,23 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @param pOuvrage l'ouvrage emprunté
      */
     @Override
-    public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) {
+    public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException {
+        Ouvrage ouvrage = ouvrageManager.getOuvrage(pOuvrage.getIdOuvrage());
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
             @Override
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
+
                 pEmprunt.setDateDebut(LocalDate.now());
                 pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(4));
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
-                pEmprunt.setIdOuvrage(pOuvrage.getIdOuvrage());
+                pEmprunt.setIdOuvrage(ouvrage.getIdOuvrage());
                 pEmprunt.setEtat(EmpruntEtat.ENCOURS.toString());
-                //pOuvrage.setNombreDispo(- 1);
+                ouvrage.setNombreDispo(ouvrage.getNombreDispo() - 1);
                 empruntDao.emprunt(pEmprunt);
-                //ouvrageManager.ModifierNombreDispo(pOuvrage);
+                ouvrageManager.ModifierNombreDispo(ouvrage);
             }
         });
     }
@@ -131,7 +133,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pEmprunt.setEtat(EmpruntEtat.RENDU.toString());
-                ouvrage.setNombreDispo(+1);
+                ouvrage.setNombreDispo(ouvrage.getNombreDispo() + 1);
                 empruntDao.ChangerEtatEmprunt(pEmprunt);
                 ouvrageManager.ModifierNombreDispo(ouvrage);
             }
