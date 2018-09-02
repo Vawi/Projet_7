@@ -1,21 +1,28 @@
 package org.val.win.service.contract;
 
+
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;
 
-import javax.jws.WebService;
 import javax.jws.WebMethod;
+import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 
-/**
- * Interface de la classe EmpruntServiceImpl
- */
 @WebService
 @SOAPBinding(style = Style.RPC)
-public interface EmpruntService {
+public interface P7Service {
+
+    @WebMethod
+    Ouvrage[] getListOuvrage();
+
+    @WebMethod
+    Object[] getListDispo();
+
+    @WebMethod
+    Utilisateur utilisateurLogin(final String pseudonyme, final String mdp);
 
     /**
      * Recuperer la liste des emprunts
@@ -61,5 +68,6 @@ public interface EmpruntService {
      */
     @WebMethod
     void retardEmprunt(final Emprunt pEmprunt);
+
 
 }

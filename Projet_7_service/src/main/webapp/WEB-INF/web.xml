@@ -20,44 +20,17 @@
         </listener-class>
     </listener>
 
-
     <servlet>
-        <servlet-name>emprunt</servlet-name>
+        <servlet-name>service</servlet-name>
         <servlet-class>
             com.sun.xml.ws.transport.http.servlet.WSServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <servlet>
-        <servlet-name>ouvrage</servlet-name>
-        <servlet-class>
-            com.sun.xml.ws.transport.http.servlet.WSServlet
-        </servlet-class>
-        <load-on-startup>2</load-on-startup>
-    </servlet>
-
-    <servlet>
-        <servlet-name>utilisateur</servlet-name>
-        <servlet-class>
-            com.sun.xml.ws.transport.http.servlet.WSServlet
-        </servlet-class>
-        <load-on-startup>3</load-on-startup>
-    </servlet>
-
     <servlet-mapping>
-        <servlet-name>emprunt</servlet-name>
-        <url-pattern>/emprunt</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>ouvrage</servlet-name>
-        <url-pattern>/ouvrage</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>utilisateur</servlet-name>
-        <url-pattern>/utilisateur</url-pattern>
+        <servlet-name>service</servlet-name>
+        <url-pattern>/service</url-pattern>
     </servlet-mapping>
 
     <session-config>

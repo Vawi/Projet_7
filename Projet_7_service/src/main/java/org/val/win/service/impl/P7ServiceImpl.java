@@ -1,15 +1,19 @@
 package org.val.win.service.impl;
 
+
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.val.win.business.contract.manager.EmpruntManager;
 import org.val.win.business.contract.manager.OuvrageManager;
+import org.val.win.business.contract.manager.UtilisateurManager;
 import org.val.win.business.impl.manager.EmpruntManagerImpl;
 import org.val.win.business.impl.manager.OuvrageManagerImpl;
+import org.val.win.business.impl.manager.UtilisateurManagerImpl;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;
-import org.val.win.service.contract.EmpruntService;
+import org.val.win.service.contract.P7Service;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -17,18 +21,22 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 import java.util.List;
 
-/**
- * Implementation du webservice de l'emprunt
- */
-@WebService(endpointInterface = "org.val.win.service.contract.EmpruntService")
+@WebService(endpointInterface = "org.val.win.service.contract.P7Service")
 @Named
-public class EmpruntServiceImpl implements EmpruntService {
+public class P7ServiceImpl implements P7Service {
 
     /**
      * Récupérer manager factory
      */
     @Inject
     private EmpruntManager empruntManager;
+
+    @Inject
+    private OuvrageManager ouvrageManager;
+
+    @Inject
+    private UtilisateurManager utilisateurManager;
+    private Utilisateur utilisateur;
 
     /**
      * Recuperer la liste des emprunts
@@ -113,4 +121,56 @@ public class EmpruntServiceImpl implements EmpruntService {
         empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
         empruntManager.retardEmprunt(pEmprunt);
     }
+
+    /**
+     * Methode pour obtenir la liste des ouvrages
+     * @return la liste complète des ouvrages
+     */
+    @Override
+    @WebMethod
+    public Ouvrage[] getListOuvrage() {
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("bootstrapContext.xml");
+        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
+        List<Ouvrage> listOuvrage = ouvrageManager.getListOuvrage();
+        Ouvrage[] vArrayOuvrage = listOuvrage.toArray(new Ouvrage[listOuvrage.size()]);
+        return vArrayOuvrage;
+    }
+
+    /**
+     * Methode pour obtneir la liste des ouvrages disponibles
+     * @return la liste des ouvrages disponibles
+     */
+    @Override
+    @WebMethod
+    public Object[] getListDispo() {
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("bootstrapContext.xml");
+        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
+        List<Ouvrage> listOuvrageDispo = ouvrageManager.getListOuvrageDispo();
+        Object[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);
+        return vArrayOuvrageDispo;
+    }
+
+    /**
+     * Recuperer un utilisateur
+     * @param pseudonyme son pseudonyme
+     * @param mdp son mot de passe
+     * @return un utilisateur
+     */
+    @Override
+    @WebMethod
+    public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) {
+        try {
+            ClassPathXmlApplicationContext context =
+                    new ClassPathXmlApplicationContext("bootstrapContext.xml");
+            utilisateurManager = (UtilisateurManagerImpl)context.getBean("utilisateurManagerImpl");
+            utilisateur = utilisateurManager.getUtilisateur(pseudonyme, mdp);
+        } catch (NotFoundException pEx) {
+            System.out.println("Utilisateur non trouvé");
+        }
+        return utilisateur;
+    }
+
+
 }
