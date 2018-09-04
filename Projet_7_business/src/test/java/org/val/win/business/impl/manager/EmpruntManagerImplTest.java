@@ -1,5 +1,6 @@
 package org.val.win.business.impl.manager;
 
+import com.sun.tools.corba.se.idl.constExpr.Not;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -17,6 +18,8 @@ import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;
+
+import java.util.List;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -40,6 +43,12 @@ public class EmpruntManagerImplTest {
         Ouvrage ouvrage = ouvrageManager.getOuvrage(15);
         empruntManager.emprunt(emprunt, utilisateur, ouvrage);
         Assertions.assertNotNull(empruntManager.getListEmpruntUtilisateur(utilisateur.getIdUtilisateur()));
+    }
+
+    @Test
+    public void getListEmpruntDispo() throws NotFoundException {
+        List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(2);
+        Assertions.assertNotNull(vListEmprunt);
     }
 
     @Test

@@ -168,11 +168,11 @@ public class Emprunt {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("Emprunt id de l'emprunt=").append(idEmprunt)
-                .append(vSEP).append("nom=\"").append(idOuvrage).append('"')
-                .append(vSEP).append("prenom=\"").append(idUtilisateur).append('"')
-                .append(vSEP).append("mail=\"").append(dateDebut).append('"')
-                .append(vSEP).append("mail=\"").append(dateFin).append('"')
-                .append(vSEP).append("mail=\"").append(etat).append('"')
+                .append(vSEP).append("Id de l'ouvrage =\"").append(idOuvrage).append('"')
+                .append(vSEP).append("Id de l'utilisateur =\"").append(idUtilisateur).append('"')
+                .append(vSEP).append("Date de début de l'emprunt =\"").append(dateDebut).append('"')
+                .append(vSEP).append("Date de fin de l'emprunt =\"").append(dateFin).append('"')
+                .append(vSEP).append("Etat de l'emprunt =\"").append(etat).append('"')
                 .append("}");
         return vStB.toString();
     }

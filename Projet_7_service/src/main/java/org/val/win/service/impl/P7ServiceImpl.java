@@ -1,7 +1,5 @@
 package org.val.win.service.impl;
 
-
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.val.win.business.contract.manager.EmpruntManager;
 import org.val.win.business.contract.manager.OuvrageManager;

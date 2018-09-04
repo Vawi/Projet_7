@@ -1,6 +1,5 @@
 package org.val.win.service.contract;
 
-
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
