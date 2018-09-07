@@ -1,6 +1,5 @@
 package org.val.win.business.impl.manager;
 
-import org.joda.time.LocalDate;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
@@ -14,6 +13,7 @@ import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.bean.EmpruntEtat;
 import org.val.win.model.exception.NotFoundException;
 
+import org.joda.time.LocalDate;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
@@ -55,6 +55,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
         vListEmprunt = vListEmprunt.stream()
                 .filter(p -> p.getIdUtilisateur().equals(id))
                 .collect(Collectors.toList());
+        System.out.println(vListEmprunt);
         return vListEmprunt;
     }
 

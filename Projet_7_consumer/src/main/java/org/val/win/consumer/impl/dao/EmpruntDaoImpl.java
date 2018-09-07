@@ -1,5 +1,6 @@
 package org.val.win.consumer.impl.dao;
 
+import org.joda.time.LocalDate;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -14,7 +15,6 @@ import org.val.win.model.bean.Emprunt;
 import javax.inject.Named;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.joda.time.LocalDate;
 
 import java.util.List;
 

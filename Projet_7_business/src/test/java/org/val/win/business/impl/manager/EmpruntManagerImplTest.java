@@ -1,6 +1,5 @@
 package org.val.win.business.impl.manager;
 
-import com.sun.tools.corba.se.idl.constExpr.Not;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -46,7 +45,7 @@ public class EmpruntManagerImplTest {
     }
 
     @Test
-    public void getListEmpruntDispo() throws NotFoundException {
+    public void getListEmpruntUtil() {
         List<Emprunt> vListEmprunt = empruntManager.getListEmpruntUtilisateur(2);
         Assertions.assertNotNull(vListEmprunt);
     }

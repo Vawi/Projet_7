@@ -1,10 +1,16 @@
 package org.val.win.model.bean;
 
 import org.joda.time.LocalDate;
+import org.val.win.model.adapter.LocalDateAdapter;
+
+import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * bean de l'objet emprunt
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
 public class Emprunt {
 
 
@@ -28,11 +34,17 @@ public class Emprunt {
     /**
      * date de debut de l'emprunt
      */
+    @XmlSchemaType(name = "date")
+    @XmlJavaTypeAdapter(type=LocalDate.class,
+            value= LocalDateAdapter.class)
     private LocalDate dateDebut;
 
     /**
      * date de fin de l'emprunt
      */
+    @XmlSchemaType(name = "date")
+    @XmlJavaTypeAdapter(type=LocalDate.class,
+            value= LocalDateAdapter.class)
     private LocalDate dateFin;
 
     /**

@@ -12,6 +12,7 @@ import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
 import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.P7Service;
+import org.val.win.service.util.ContextLoader;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -23,17 +24,6 @@ import java.util.List;
 @Named
 public class P7ServiceImpl implements P7Service {
 
-    /**
-     * Récupérer manager factory
-     */
-    @Inject
-    private EmpruntManager empruntManager;
-
-    @Inject
-    private OuvrageManager ouvrageManager;
-
-    @Inject
-    private UtilisateurManager utilisateurManager;
     private Utilisateur utilisateur;
 
     /**
@@ -43,10 +33,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public Object[] getListEmprunt() {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        Object[] vArrayEmprunt = empruntManager.getListEmprunt().toArray();
+        Object[] vArrayEmprunt = ContextLoader.INSTANCE.getEmpruntManager().getListEmprunt().toArray();
         return vArrayEmprunt;
     }
 
@@ -58,10 +45,10 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        Object[] vArrayEmprunt = empruntManager.getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur()).toArray();
+        Object[] vArrayEmprunt = ContextLoader.INSTANCE
+                        .getEmpruntManager()
+                        .getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur())
+                        .toArray();
         return vArrayEmprunt;
     }
 
@@ -75,10 +62,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        empruntManager.emprunt(pEmprunt, pUtilisateur, pOuvrage);
+        ContextLoader.INSTANCE.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
     }
 
     /**
@@ -88,10 +72,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public void prolongationEmprunt(final Emprunt pEmprunt) {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        empruntManager.prolongerEmprunt(pEmprunt);
+        ContextLoader.INSTANCE.getEmpruntManager().prolongerEmprunt(pEmprunt);
     }
 
     /**
@@ -101,10 +82,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        empruntManager.fermerEmprunt(pEmprunt);
+        ContextLoader.INSTANCE.getEmpruntManager().fermerEmprunt(pEmprunt);
     }
 
     /**
@@ -114,10 +92,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public void retardEmprunt(final Emprunt pEmprunt) {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        empruntManager = (EmpruntManagerImpl)context.getBean("empruntManagerImpl");
-        empruntManager.retardEmprunt(pEmprunt);
+        ContextLoader.INSTANCE.getEmpruntManager().retardEmprunt(pEmprunt);
     }
 
     /**
@@ -127,10 +102,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public Ouvrage[] getListOuvrage() {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
-        List<Ouvrage> listOuvrage = ouvrageManager.getListOuvrage();
+        List<Ouvrage> listOuvrage = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrage();
         Ouvrage[] vArrayOuvrage = listOuvrage.toArray(new Ouvrage[listOuvrage.size()]);
         return vArrayOuvrage;
     }
@@ -142,10 +114,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public Object[] getListDispo() {
-        ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("bootstrapContext.xml");
-        ouvrageManager = (OuvrageManagerImpl)context.getBean("ouvrageManagerImpl");
-        List<Ouvrage> listOuvrageDispo = ouvrageManager.getListOuvrageDispo();
+        List<Ouvrage> listOuvrageDispo = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrageDispo();
         Object[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);
         return vArrayOuvrageDispo;
     }
@@ -160,10 +129,7 @@ public class P7ServiceImpl implements P7Service {
     @WebMethod
     public Utilisateur utilisateurLogin(final String pseudonyme, final String mdp) {
         try {
-            ClassPathXmlApplicationContext context =
-                    new ClassPathXmlApplicationContext("bootstrapContext.xml");
-            utilisateurManager = (UtilisateurManagerImpl)context.getBean("utilisateurManagerImpl");
-            utilisateur = utilisateurManager.getUtilisateur(pseudonyme, mdp);
+            utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(pseudonyme, mdp);
         } catch (NotFoundException pEx) {
             System.out.println("Utilisateur non trouvé");
         }
