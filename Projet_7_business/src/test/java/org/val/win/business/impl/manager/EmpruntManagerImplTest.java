@@ -60,20 +60,20 @@ public class EmpruntManagerImplTest {
     public void prolongerEmprunt() throws NotFoundException {
         Emprunt vEmprunt = empruntManager.getEmprunt(2);
         empruntManager.prolongerEmprunt(vEmprunt);
-        Assertions.assertTrue(vEmprunt.getEtat() == "l'emprunt a été prolongé");
+        Assertions.assertTrue(vEmprunt.getEtat() == "Prolongé");
     }
 
     @Test
     public void fermerEmprunt() throws NotFoundException {
         Emprunt vEmprunt = empruntManager.getEmprunt(1);
         empruntManager.fermerEmprunt(vEmprunt);
-        Assert.assertTrue(vEmprunt.getEtat() == "l'emprunt est terminé, l'ouvrage à été rendu");
+        Assert.assertTrue(vEmprunt.getEtat() == "Terminé");
     }
 
     @Test
     public void retardEmprunt() throws NotFoundException {
         Emprunt vEmprunt = empruntManager.getEmprunt(1);
         empruntManager.retardEmprunt(vEmprunt);
-        Assert.assertTrue(vEmprunt.getEtat() == "l'emprunt n'est pas terminé suite a un retard dans le rendu");
+        Assert.assertTrue(vEmprunt.getEtat() == "Retard");
     }
 }

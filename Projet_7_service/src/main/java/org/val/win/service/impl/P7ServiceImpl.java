@@ -1,12 +1,6 @@
 package org.val.win.service.impl;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.val.win.business.contract.manager.EmpruntManager;
-import org.val.win.business.contract.manager.OuvrageManager;
-import org.val.win.business.contract.manager.UtilisateurManager;
-import org.val.win.business.impl.manager.EmpruntManagerImpl;
-import org.val.win.business.impl.manager.OuvrageManagerImpl;
-import org.val.win.business.impl.manager.UtilisateurManagerImpl;
+
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
@@ -14,7 +8,6 @@ import org.val.win.model.exception.NotFoundException;
 import org.val.win.service.contract.P7Service;
 import org.val.win.service.util.ContextLoader;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -32,8 +25,9 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Object[] getListEmprunt() {
-        Object[] vArrayEmprunt = ContextLoader.INSTANCE.getEmpruntManager().getListEmprunt().toArray();
+    public Emprunt[] getListEmprunt() {
+        List<Emprunt> listEmprunt = ContextLoader.INSTANCE.getEmpruntManager().getListEmprunt();
+        Emprunt[] vArrayEmprunt = listEmprunt.toArray(new Emprunt[listEmprunt.size()]);
         return vArrayEmprunt;
     }
 
@@ -44,11 +38,10 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
-        Object[] vArrayEmprunt = ContextLoader.INSTANCE
-                        .getEmpruntManager()
-                        .getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur())
-                        .toArray();
+    public Emprunt[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur) {
+        List<Emprunt> listEmpruntUtil = ContextLoader.INSTANCE.getEmpruntManager()
+                .getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur());
+        Emprunt[] vArrayEmprunt = listEmpruntUtil.toArray(new Emprunt[listEmpruntUtil.size()]);
         return vArrayEmprunt;
     }
 
@@ -113,9 +106,9 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Object[] getListDispo() {
+    public Ouvrage[] getListDispo() {
         List<Ouvrage> listOuvrageDispo = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrageDispo();
-        Object[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);
+        Ouvrage[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);
         return vArrayOuvrageDispo;
     }
 

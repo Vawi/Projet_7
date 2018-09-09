@@ -14,12 +14,26 @@ import javax.jws.soap.SOAPBinding.Style;
 @SOAPBinding(style = Style.RPC)
 public interface P7Service {
 
+    /**
+     * Recuperer la liste des ouvrages
+     * @return la liste des ouvrages
+     */
     @WebMethod
     Ouvrage[] getListOuvrage();
 
+    /**
+     * Recuperer la liste des ouvrages disponible
+     * @return la liste des ouvrages disponible
+     */
     @WebMethod
-    Object[] getListDispo();
+    Ouvrage[] getListDispo();
 
+    /**
+     * Recuperer un utilisateur via ses identifiants
+     * @param pseudonyme pseudo de l'utilisateur
+     * @param mdp mot de passe de l'utilisateur
+     * @return un utilisateur
+     */
     @WebMethod
     Utilisateur utilisateurLogin(final String pseudonyme, final String mdp);
 
@@ -28,7 +42,7 @@ public interface P7Service {
      * @return la liste des emprunts
      */
     @WebMethod
-    Object[] getListEmprunt();
+    Emprunt[] getListEmprunt();
 
     /**
      * Methode servant a obtenir les emprunts d'un utilisateur
@@ -36,7 +50,7 @@ public interface P7Service {
      * @return une liste d'emprunt
      */
     @WebMethod
-    Object[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur);
+    Emprunt[] getListEmpruntUtilisateur(final Utilisateur pUtilisateur);
 
     /**
      * Creer un emprunt
