@@ -82,5 +82,12 @@ public interface P7Service {
     @WebMethod
     void retardEmprunt(final Emprunt pEmprunt);
 
+    /**
+     * Recuperer un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return un utilisateur
+     */
+    Utilisateur getUtilisateur(Integer id);
+
 
 }

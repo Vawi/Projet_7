@@ -50,4 +50,11 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
                 .orElseThrow(() -> new NotFoundException("Aucun utilisateur correspondant au couple prenom/password fourni."));
         return vUtilisateur;
     }
+
+    @Override
+    public Utilisateur getUtilisateur(Integer id) {
+        Utilisateur vUtilisateur = utilisateurDao.getUtilisateur(id);
+        return vUtilisateur;
+    }
+
 }

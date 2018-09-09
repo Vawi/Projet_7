@@ -50,4 +50,5 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         Utilisateur utilisateur = vJdbcTemplate.queryForObject(vSQL, Utilisateur.class, id);
         return utilisateur;
     }
+
 }

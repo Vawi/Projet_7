@@ -22,4 +22,11 @@ public interface UtilisateurManager {
      */
     Utilisateur getUtilisateur(String pPseudonyme, String pPassword) throws NotFoundException;
 
+    /**
+     * Recuperer un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return un utilisateur
+     */
+    Utilisateur getUtilisateur(Integer id);
+
 }

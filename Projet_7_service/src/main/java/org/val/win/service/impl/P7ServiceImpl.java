@@ -129,5 +129,16 @@ public class P7ServiceImpl implements P7Service {
         return utilisateur;
     }
 
+    /**
+     * Recuperer un utilisateur
+     * @param id l'id de l'utilisateur
+     * @return un utilisateur
+     */
+    @Override
+    @WebMethod
+    public Utilisateur getUtilisateur(Integer id) {
+        utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(id);
+        return utilisateur;
+    }
 
 }
