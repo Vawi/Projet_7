@@ -14,7 +14,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Projet_7" target="1.8" />
       <module name="Projet_7_business" target="1.8" />
       <module name="Projet_7_consumer" target="1.8" />
       <module name="Projet_7_model" target="1.8" />

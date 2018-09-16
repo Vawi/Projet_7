@@ -113,6 +113,19 @@ public class P7ServiceImpl implements P7Service {
     }
 
     /**
+     * Recuperer un ouvrage
+     * @param id l'id de l'ouvrage
+     * @return un ouvrage
+     * @throws NotFoundException en cas d'ouvrage non trouvé
+     */
+    @Override
+    @WebMethod
+    public Ouvrage getOuvrage(final Integer id) throws NotFoundException {
+        Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(id);
+        return ouvrage;
+    }
+
+    /**
      * Recuperer un utilisateur
      * @param pseudonyme son pseudonyme
      * @param mdp son mot de passe

@@ -29,6 +29,14 @@ public interface P7Service {
     Ouvrage[] getListDispo();
 
     /**
+     * Recuperer un ouvrage
+     * @param id l'id de l'ouvrage
+     * @return un ouvrage
+     * @throws NotFoundException en cas d'ouvrage non trouvé
+     */
+    Ouvrage getOuvrage(final Integer id) throws NotFoundException;
+
+    /**
      * Recuperer un utilisateur via ses identifiants
      * @param pseudonyme pseudo de l'utilisateur
      * @param mdp mot de passe de l'utilisateur

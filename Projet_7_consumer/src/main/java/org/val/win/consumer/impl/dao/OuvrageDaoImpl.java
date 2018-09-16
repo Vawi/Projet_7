@@ -51,4 +51,5 @@ public class OuvrageDaoImpl extends AbstractDaoImpl implements OuvrageDao {
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
     }
+
 }
