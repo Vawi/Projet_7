@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54a5ecad-2978-4dcb-b844-9d132bcdb122" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/contract/P7Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/contract/P7Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Projet_7_service/target/" />
     <ignored path="$PROJECT_DIR$/Projet_7_business/target/" />
@@ -111,6 +107,16 @@
         <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="utilisateur: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="jdbc/p7" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="p7: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
@@ -169,29 +175,33 @@
     <session id="2120979278">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="79" />
+          <entry key="project.closed" value="90" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="4" />
-          <entry key="project.open.time.11" value="10" />
-          <entry key="project.open.time.12" value="9" />
+          <entry key="project.open.time.11" value="14" />
+          <entry key="project.open.time.12" value="10" />
           <entry key="project.open.time.13" value="11" />
-          <entry key="project.open.time.14" value="8" />
-          <entry key="project.open.time.15" value="3" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.14" value="9" />
+          <entry key="project.open.time.15" value="5" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="79" />
+          <entry key="project.opened" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -199,17 +209,18 @@
           <entry key="SpringLocalModels/module=Projet_7_consumer" value="1" />
           <entry key="SpringLocalModels/module=Projet_7_service" value="1" />
           <entry key="class" value="2" />
-          <entry key="emprunt" value="18" />
+          <entry key="emprunt" value="20" />
+          <entry key="gitignore" value="1" />
           <entry key="groovy" value="2" />
           <entry key="iml" value="8" />
-          <entry key="java" value="343" />
+          <entry key="java" value="347" />
           <entry key="log" value="4" />
           <entry key="md" value="2" />
           <entry key="ouvrage" value="3" />
           <entry key="postgres" value="1" />
           <entry key="properties" value="14" />
           <entry key="utilisateur" value="3" />
-          <entry key="xml" value="194" />
+          <entry key="xml" value="196" />
           <entry key="xml;appContextName=bootstrapContext" value="2" />
         </counts>
       </usages-collector>
@@ -217,22 +228,23 @@
         <counts>
           <entry key="ANSI Aware" value="1" />
           <entry key="CLASS" value="2" />
-          <entry key="Database Element" value="24" />
+          <entry key="Database Element" value="26" />
           <entry key="IDEA_MODULE" value="8" />
-          <entry key="JAVA" value="341" />
+          <entry key="JAVA" value="345" />
           <entry key="Log" value="3" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="14" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="2" />
           <entry key="UML" value="4" />
-          <entry key="XML" value="194" />
+          <entry key="XML" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="58" />
+          <entry key="cell" value="64" />
+          <entry key="gitignore" value="16" />
           <entry key="java" value="6358" />
           <entry key="properties" value="8" />
           <entry key="xml" value="1598" />
@@ -241,8 +253,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="6358" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="8" />
-          <entry key="Scratch" value="58" />
+          <entry key="Scratch" value="64" />
           <entry key="XML" value="1598" />
         </counts>
       </usages-collector>
@@ -251,37 +264,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/manager/EmpruntManager.java">
+        <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/contract/P7Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="1140">
+              <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -296,10 +282,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="438">
+              <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_model/src/main/java/org/val/win/model/adapter/LocalDateAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/util/ContextLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="49" column="1" selection-start-line="15" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -316,7 +329,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="465">
               <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
             </state>
           </provider>
@@ -325,7 +338,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="540">
               <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
             </state>
           </provider>
@@ -358,7 +371,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Projet_7_business/src/main/resources/businessContextTest.xml" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/webapp/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/webapp/bootstrap/SpringConfiguration.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/webapp/bootstrap/ConfigurationSpring.java" />
@@ -409,6 +421,7 @@
         <option value="$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/contract/dao/OuvrageDao.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/contract/P7Service.java" />
         <option value="$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -441,7 +454,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="947" />
@@ -452,6 +465,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -754,12 +769,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projet_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_7_technical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1071,6 +1092,19 @@
       <workItem from="1537022662360" duration="893000" />
       <workItem from="1537100717715" duration="860000" />
       <workItem from="1537110233853" duration="84000" />
+      <workItem from="1537110372713" duration="165000" />
+      <workItem from="1537111055075" duration="598000" />
+      <workItem from="1537192794263" duration="291000" />
+      <workItem from="1537194981268" duration="819000" />
+      <workItem from="1537196258790" duration="2155000" />
+      <workItem from="1537199187904" duration="779000" />
+      <workItem from="1537206309228" duration="666000" />
+      <workItem from="1537287054758" duration="112000" />
+      <workItem from="1537287197255" duration="205000" />
+      <workItem from="1537360306076" duration="359000" />
+      <workItem from="1537380007888" duration="2069000" />
+      <workItem from="1537455934774" duration="897000" />
+      <workItem from="1537458800129" duration="255000" />
     </task>
     <servers />
   </component>
@@ -1107,12 +1141,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81105000" />
+    <option name="totallyTimeSpent" value="90475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.31868133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.32234433" />
       <window_info id="Structure" order="1" sideWeight="0.50102043" side_tool="true" weight="0.2930403" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1122,7 +1157,7 @@
       <window_info id="Web" order="7" sideWeight="0.50102043" side_tool="true" weight="0.2930403" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35408163" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.30816326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49591836" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1143,7 +1178,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32967034" />
-      <window_info anchor="right" id="Database" order="6" weight="0.21428572" />
+      <window_info anchor="right" id="Database" order="6" weight="0.1923077" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32905984" />
@@ -1178,92 +1213,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/contract/ManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SpringLocalModels/module=Projet_7_service">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SpringLocalModels</ID>
-          <OriginalElement>module=Projet_7_service</OriginalElement>
-          <nodes>
-            <node x="" y="">module=Projet_7_service</node>
-            <node x="" y="">fileset=Projet_7_service/WebserviceContext</node>
-            <node x="" y="">filePath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/webservice/webserviceContext.xml</node>
-            <node x="" y="">filePath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml</node>
-            <node x="" y="">filePath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_consumer/src/main/resources/consumerContext.xml</node>
-            <node x="" y="">filePath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_business/src/main/resources/businessContext.xml</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="416.0" y="43.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Show filesets as groups</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SPRING/appContextPath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;appContextName=bootstrapContext">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SPRING</ID>
-          <OriginalElement>appContextPath=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;appContextName=bootstrapContext</OriginalElement>
-          <nodes>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_name=context:annotation-config</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_name=(org.val.win) [Component]</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.business.impl.manager.OuvrageManagerImpl;bean_name=ouvrageManagerImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.springframework.jdbc.datasource.DataSourceTransactionManager;bean_name=txManagerP7</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.consumer.impl.dao.OuvrageDaoImpl;bean_name=ouvrageDaoImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.business.impl.manager.UtilisateurManagerImpl;bean_name=utilisateurManagerImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.consumer.impl.dao.UtilisateurDaoImpl;bean_name=utilisateurDaoImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.service.impl.EmpruntServiceImpl;bean_name=empruntServiceImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.consumer.impl.dao.EmpruntDaoImpl;bean_name=empruntDaoImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.apache.commons.dbcp2.BasicDataSource;bean_name=dataSourceP7</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.service.impl.UtilisateurServiceImpl;bean_name=utilisateurServiceImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.service.impl.OuvrageServiceImpl;bean_name=ouvrageServiceImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.business.impl.ManagerFactoryImpl;bean_name=managerFactory</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.val.win.business.impl.manager.EmpruntManagerImpl;bean_name=empruntManagerImpl</node>
-            <node x="" y="">module=Projet_7_service;context=/Users/v.w/Documents/GitHub/Projet_7/Projet_7_service/src/main/resources/bootstrapContext.xml;bean_class=org.springframework.beans.factory.config.PropertiesFactoryBean;bean_name=dataSourceP7Configuration</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8343653250773994" x="472.0" y="313.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Local context</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/resources/db-P7.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/xml/bind/jaxb-impl/2.2.10-b140802.1033/jaxb-impl-2.2.10-b140802.1033.jar!/com/sun/xml/bind/v2/runtime/MarshallerImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/sun/xml/ws/jaxws-rt/2.2.10/jaxws-rt-2.2.10.jar!/com/sun/xml/ws/message/jaxb/JAXBMessage.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -1307,18 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://122f6ca9-2208-4527-bf7c-5a5fe640c9db/database/p7/schema/public/table/emprunt" />
     <entry file="file://$PROJECT_DIR$/Projet_7_model/src/main/java/org/val/win/model/bean/Emprunt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/util/ContextLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1350,22 +1291,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_model/src/main/java/org/val/win/model/adapter/LocalDateAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_service/src/test/java/org/val/win/service/impl/P7ServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_technical/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1381,24 +1312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_business/src/test/java/org/val/win/business/impl/manager/OuvrageManagerImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1419,13 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="96" column="23" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="119" column="7" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1450,6 +1360,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://122f6ca9-2208-4527-bf7c-5a5fe640c9db/database/p7/schema/public/table/emprunt" />
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_technical/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/EmpruntManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1457,10 +1399,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/OuvrageDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/Projet_7_model/src/main/java/org/val/win/model/adapter/LocalDateAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/util/ContextLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="49" column="1" selection-start-line="15" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1473,14 +1422,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/EmpruntDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="465">
           <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet_7_consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="540">
           <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
         </state>
       </provider>
@@ -1492,10 +1441,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_business/src/main/java/org/val/win/business/impl/manager/OuvrageManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="438">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
