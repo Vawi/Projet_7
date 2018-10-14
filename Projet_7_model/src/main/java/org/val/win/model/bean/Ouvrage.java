@@ -29,7 +29,6 @@ public class Ouvrage {
     private String auteur;
 
 
-
     // ==================== Constructeurs ====================
 
     /**

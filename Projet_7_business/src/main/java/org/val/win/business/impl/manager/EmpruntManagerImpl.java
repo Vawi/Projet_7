@@ -55,7 +55,6 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
         vListEmprunt = vListEmprunt.stream()
                 .filter(p -> p.getIdUtilisateur().equals(id))
                 .collect(Collectors.toList());
-        System.out.println(vListEmprunt);
         return vListEmprunt;
     }
 
@@ -91,7 +90,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
 
                 pEmprunt.setDateDebut(LocalDate.now());
-                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(4));
+                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(8));
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
                 pEmprunt.setIdOuvrage(ouvrage.getIdOuvrage());
                 pEmprunt.setEtat(EmpruntEtat.ENCOURS.toString());

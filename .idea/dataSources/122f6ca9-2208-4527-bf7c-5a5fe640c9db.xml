@@ -99,8 +99,8 @@
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <Owner>v.w</Owner>
-      <IntrospectionTimestamp>2018-08-26.13:07:44.515</IntrospectionTimestamp>
-      <IntrospectionStateNumber>984</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-10-14.17:24:06.602</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1048</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -186,7 +186,7 @@
     <table id="31" parent="19" name="utilisateur">
       <ObjectId>16968</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>974</StateNumber>
+      <StateNumber>1046</StateNumber>
     </table>
     <column id="32" parent="29" name="id_emprunt">
       <Position>1</Position>
@@ -334,9 +334,9 @@
     </column>
     <column id="52" parent="31" name="mot_de_passe">
       <Position>5</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>968</StateNumber>
+      <StateNumber>1048</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="53" parent="31" name="pseudonyme">
