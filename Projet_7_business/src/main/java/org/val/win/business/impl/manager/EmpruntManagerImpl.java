@@ -90,7 +90,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
 
                 pEmprunt.setDateDebut(LocalDate.now());
-                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(8));
+                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(4));
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
                 pEmprunt.setIdOuvrage(ouvrage.getIdOuvrage());
                 pEmprunt.setEtat(EmpruntEtat.ENCOURS.toString());
