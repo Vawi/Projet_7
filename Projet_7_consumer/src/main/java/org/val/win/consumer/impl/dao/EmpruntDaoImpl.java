@@ -88,7 +88,6 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
 
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("dateFin", pEmprunt.getDateFin().toDate());
         vParams.addValue("etat", pEmprunt.getEtat());
         vParams.addValue("idEmprunt", pEmprunt.getIdEmprunt());
 
