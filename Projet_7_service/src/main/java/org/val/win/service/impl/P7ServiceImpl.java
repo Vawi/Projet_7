@@ -1,6 +1,8 @@
 package org.val.win.service.impl;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.val.win.model.bean.Emprunt;
 import org.val.win.model.bean.Ouvrage;
 import org.val.win.model.bean.Utilisateur;
@@ -16,6 +18,8 @@ import java.util.List;
 @WebService(endpointInterface = "org.val.win.service.contract.P7Service")
 @Named
 public class P7ServiceImpl implements P7Service {
+
+    public static final Logger logger = LogManager.getLogger(P7Service.class);
 
     private Utilisateur utilisateur;
 
@@ -56,6 +60,8 @@ public class P7ServiceImpl implements P7Service {
     @WebMethod
     public void emprunt(final Emprunt pEmprunt, final Utilisateur pUtilisateur, final Ouvrage pOuvrage) throws NotFoundException {
         ContextLoader.INSTANCE.getEmpruntManager().emprunt(pEmprunt, pUtilisateur, pOuvrage);
+
+        logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " à emprunter un nouvel ouvrage : " + pOuvrage.getNomOuvrage());
     }
 
     /**
@@ -64,8 +70,16 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public void prolongationEmprunt(final Emprunt pEmprunt) {
+    public void prolongationEmprunt(final Emprunt pEmprunt) throws NotFoundException {
+
         ContextLoader.INSTANCE.getEmpruntManager().prolongerEmprunt(pEmprunt);
+
+        Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
+        Utilisateur utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(emprunt.getIdUtilisateur());
+        Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(emprunt.getIdOuvrage());
+
+        logger.info(utilisateur.getPrenom() + " " + utilisateur.getNom() + "  à prolonger son emprunt de " + ouvrage.getNomOuvrage());
+
     }
 
     /**
@@ -76,6 +90,14 @@ public class P7ServiceImpl implements P7Service {
     @WebMethod
     public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
         ContextLoader.INSTANCE.getEmpruntManager().fermerEmprunt(pEmprunt);
+
+        Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
+        Utilisateur utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(emprunt.getIdUtilisateur());
+        Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(emprunt.getIdOuvrage());
+
+        logger.info("L\'Emprunt de " + utilisateur.getPrenom() +
+                " " + utilisateur.getNom() + "  pour " + ouvrage.getNomOuvrage() +
+                " Est terminé");
     }
 
     /**
@@ -84,8 +106,16 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public void retardEmprunt(final Emprunt pEmprunt) {
+    public void retardEmprunt(final Emprunt pEmprunt) throws NotFoundException {
         ContextLoader.INSTANCE.getEmpruntManager().retardEmprunt(pEmprunt);
+
+        Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
+        Utilisateur utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(emprunt.getIdUtilisateur());
+        Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(emprunt.getIdOuvrage());
+
+        logger.info("L\'Emprunt de " + utilisateur.getPrenom() +
+                " " + utilisateur.getNom() + "  pour " + ouvrage.getNomOuvrage() +
+                " est en retard");
     }
 
     /**
@@ -139,6 +169,7 @@ public class P7ServiceImpl implements P7Service {
         } catch (NotFoundException pEx) {
             System.out.println("Utilisateur non trouvé");
         }
+        logger.info(utilisateur.getPrenom() + " " + utilisateur.getNom() + "est connecté");
         return utilisateur;
     }
 

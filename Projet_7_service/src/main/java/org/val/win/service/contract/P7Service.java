@@ -74,7 +74,7 @@ public interface P7Service {
      * @param pEmprunt l'emprunt à prolonger
      */
     @WebMethod
-    void prolongationEmprunt(final Emprunt pEmprunt);
+    void prolongationEmprunt(final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Fermer un emprunt
@@ -88,7 +88,7 @@ public interface P7Service {
      * @param pEmprunt l'emprunt a modifier
      */
     @WebMethod
-    void retardEmprunt(final Emprunt pEmprunt);
+    void retardEmprunt(final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Recuperer un utilisateur
