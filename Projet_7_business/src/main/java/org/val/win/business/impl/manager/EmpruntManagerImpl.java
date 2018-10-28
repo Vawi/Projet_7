@@ -1,5 +1,6 @@
 package org.val.win.business.impl.manager;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
@@ -34,6 +35,12 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
     @Inject
     @Named("txManagerP7")
     private PlatformTransactionManager platformTransactionManager;
+
+    @Value("${emprunt.duree}")
+    private Integer dureeEmprunt;
+
+    @Value("${prolongation.duree}")
+    private String dureeProlongation;
 
     /**
      * Retour la liste des emprunts
@@ -90,7 +97,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                                                                 pTransactionStatus) {
 
                 pEmprunt.setDateDebut(LocalDate.now());
-                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(4));
+                pEmprunt.setDateFin(pEmprunt.getDateDebut().plusWeeks(dureeEmprunt));
                 pEmprunt.setIdUtilisateur(pUtilisateur.getIdUtilisateur());
                 pEmprunt.setIdOuvrage(ouvrage.getIdOuvrage());
                 pEmprunt.setEtat(EmpruntEtat.ENCOURS.toString());
@@ -114,7 +121,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pEmprunt.setEtat(EmpruntEtat.PROLONGE.toString());
-                empruntDao.prolongerEmprunt(pEmprunt);
+                empruntDao.prolongerEmprunt(pEmprunt, dureeProlongation);
             }
         });
     }

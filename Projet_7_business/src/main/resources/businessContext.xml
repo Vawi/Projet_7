@@ -12,4 +12,6 @@
         <property name="dataSource" ref="dataSourceP7"/>
     </bean>
 
+    <context:property-placeholder location="classpath:configurationEmprunt.properties" />
+
 </beans>

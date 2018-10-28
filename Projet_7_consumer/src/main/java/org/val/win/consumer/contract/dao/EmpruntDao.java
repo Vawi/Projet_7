@@ -23,7 +23,7 @@ public interface EmpruntDao {
      * prolongation d'un emprunt
      * @param pEmprunt l'emprunt a prolonger
      */
-    void prolongerEmprunt(final Emprunt pEmprunt);
+    void prolongerEmprunt(final Emprunt pEmprunt, final String duree);
 
     /**
      * Changer l'etat d'un emprunt

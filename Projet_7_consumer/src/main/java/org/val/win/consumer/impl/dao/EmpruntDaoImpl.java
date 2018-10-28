@@ -80,9 +80,9 @@ public class EmpruntDaoImpl extends AbstractDaoImpl implements EmpruntDao {
      * @param pEmprunt l'emprunt a prolonger
      */
     @Override
-    public void prolongerEmprunt(final Emprunt pEmprunt){
+    public void prolongerEmprunt(final Emprunt pEmprunt, final String duree){
         String vSQL = "UPDATE public.emprunt " +
-                "SET date_fin = date_fin + interval '4 week'," +
+                "SET date_fin = date_fin + interval " + duree + "," +
                 "etat = :etat " +
                 "WHERE id_emprunt = :idEmprunt";
 
