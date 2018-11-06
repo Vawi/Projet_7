@@ -10,7 +10,7 @@
     </Appenders>
     <Loggers>
         <Logger name="org.val.win.service" level="info" additivity="false">
-            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="P7log"/>
         </Logger>
         <Root level="debug">
             <AppenderRef ref="Console" />
