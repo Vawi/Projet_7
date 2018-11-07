@@ -1,5 +1,7 @@
 package org.val.win.business.impl.manager;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
@@ -25,6 +27,8 @@ import java.util.stream.Collectors;
  */
 @Named
 public class EmpruntManagerImpl extends AbstractManager implements EmpruntManager {
+
+    public static final Logger logger = LogManager.getLogger(EmpruntManagerImpl.class);
 
     @Inject
     private EmpruntDao empruntDao;

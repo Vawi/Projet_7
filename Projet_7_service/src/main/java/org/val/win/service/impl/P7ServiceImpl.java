@@ -25,6 +25,7 @@ public class P7ServiceImpl implements P7Service {
 
     /**
      * Recuperer la liste des emprunts
+     * Seul le batch a acces a cette méthode
      * @return une liste d'emprunt
      */
     @Override
@@ -46,6 +47,7 @@ public class P7ServiceImpl implements P7Service {
         List<Emprunt> listEmpruntUtil = ContextLoader.INSTANCE.getEmpruntManager()
                 .getListEmpruntUtilisateur(pUtilisateur.getIdUtilisateur());
         Emprunt[] vArrayEmprunt = listEmpruntUtil.toArray(new Emprunt[listEmpruntUtil.size()]);
+        logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a chargé sa liste d'emprunt");
         return vArrayEmprunt;
     }
 
@@ -70,15 +72,14 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public void prolongationEmprunt(final Emprunt pEmprunt) throws NotFoundException {
+    public void prolongationEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException {
 
         ContextLoader.INSTANCE.getEmpruntManager().prolongerEmprunt(pEmprunt);
 
         Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
-        Utilisateur utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(emprunt.getIdUtilisateur());
         Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(emprunt.getIdOuvrage());
 
-        logger.info(utilisateur.getPrenom() + " " + utilisateur.getNom() + "  à prolonger son emprunt de " + ouvrage.getNomOuvrage());
+        logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + "  à prolonger son emprunt de " + ouvrage.getNomOuvrage());
 
     }
 
@@ -124,7 +125,13 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Ouvrage[] getListOuvrage() {
+    public Ouvrage[] getListOuvrage(final Utilisateur pUtilisateur) {
+
+        if (pUtilisateur == null) {
+            logger.info(pUtilisateur.getPrenom() + " a chargé une liste d'ouvrage");
+        } else
+            logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a chargé une liste d'ouvrage");
+
         List<Ouvrage> listOuvrage = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrage();
         Ouvrage[] vArrayOuvrage = listOuvrage.toArray(new Ouvrage[listOuvrage.size()]);
         return vArrayOuvrage;
@@ -136,7 +143,13 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Ouvrage[] getListDispo() {
+    public Ouvrage[] getListDispo(final Utilisateur pUtilisateur) {
+
+        if (pUtilisateur == null) {
+            logger.info("Anonymous a chargé une liste d'ouvrage disponible");
+        } else
+            logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a chargé une liste d'ouvrage disponible");
+
         List<Ouvrage> listOuvrageDispo = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrageDispo();
         Ouvrage[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);
         return vArrayOuvrageDispo;

@@ -1,5 +1,7 @@
 package org.val.win.business.impl.manager;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.business.contract.manager.OuvrageManager;
 import org.val.win.consumer.contract.dao.OuvrageDao;
@@ -16,6 +18,8 @@ import java.util.stream.Collectors;
  */
 @Named
 public class OuvrageManagerImpl extends AbstractManager implements OuvrageManager {
+
+    public static final Logger logger = LogManager.getLogger(OuvrageManagerImpl.class);
 
     @Inject
     private OuvrageDao ouvrageDao;

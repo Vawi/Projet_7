@@ -1,5 +1,7 @@
 package org.val.win.business.impl.manager;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.business.contract.manager.UtilisateurManager;
 import org.val.win.consumer.contract.dao.UtilisateurDao;
@@ -15,6 +17,8 @@ import java.util.List;
  */
 @Named
 public class UtilisateurManagerImpl extends AbstractManager implements UtilisateurManager {
+
+    public static final Logger logger = LogManager.getLogger(UtilisateurManagerImpl.class);
 
     @Inject
     private UtilisateurDao utilisateurDao;
