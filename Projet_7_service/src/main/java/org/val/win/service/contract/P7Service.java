@@ -81,7 +81,7 @@ public interface P7Service {
      * @param pEmprunt l'emprunt a fermer
      */
     @WebMethod
-    void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException;
+    void fermerEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Changer l'etat d'un emprunt si le rendu a du retard

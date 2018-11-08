@@ -89,7 +89,7 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
+    public void fermerEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException {
         ContextLoader.INSTANCE.getEmpruntManager().fermerEmprunt(pEmprunt);
 
         Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());

@@ -108,6 +108,8 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
                 ouvrage.setNombreDispo(ouvrage.getNombreDispo() - 1);
                 empruntDao.emprunt(pEmprunt);
                 ouvrageManager.ModifierNombreDispo(ouvrage);
+
+                logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a emprunté : " + pOuvrage.getNomOuvrage());
             }
         });
     }
@@ -135,7 +137,7 @@ public class EmpruntManagerImpl extends AbstractManager implements EmpruntManage
      * @param pEmprunt l'emprunt a clore
      */
     @Override
-    public void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException {
+    public void fermerEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException {
         Ouvrage ouvrage = ouvrageManager.getOuvrage(pEmprunt.getIdOuvrage());
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
