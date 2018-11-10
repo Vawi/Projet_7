@@ -66,7 +66,8 @@ public class EmpruntManagerImplTest {
     @Test
     public void fermerEmprunt() throws NotFoundException {
         Emprunt vEmprunt = empruntManager.getEmprunt(1);
-        empruntManager.fermerEmprunt(vEmprunt);
+        Utilisateur vUtilisateur = utilisateurManager.getUtilisateur(vEmprunt.getIdUtilisateur());
+        empruntManager.fermerEmprunt(vUtilisateur, vEmprunt);
         Assert.assertTrue(vEmprunt.getEtat() == "Terminé");
     }
 

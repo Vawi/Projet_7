@@ -72,14 +72,14 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public void prolongationEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException {
+    public void prolongationEmprunt(final Emprunt pEmprunt, final String pseudonyme) throws NotFoundException {
 
         ContextLoader.INSTANCE.getEmpruntManager().prolongerEmprunt(pEmprunt);
 
         Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
         Ouvrage ouvrage = ContextLoader.INSTANCE.getOuvrageManager().getOuvrage(emprunt.getIdOuvrage());
 
-        logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + "  à prolonger son emprunt de " + ouvrage.getNomOuvrage());
+        logger.info(pseudonyme + "  à prolonger son emprunt de " + ouvrage.getNomOuvrage());
 
     }
 
@@ -90,7 +90,7 @@ public class P7ServiceImpl implements P7Service {
     @Override
     @WebMethod
     public void fermerEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException {
-        ContextLoader.INSTANCE.getEmpruntManager().fermerEmprunt(pEmprunt);
+        ContextLoader.INSTANCE.getEmpruntManager().fermerEmprunt(pUtilisateur, pEmprunt);
 
         Emprunt emprunt = ContextLoader.INSTANCE.getEmpruntManager().getEmprunt(pEmprunt.getIdEmprunt());
         Utilisateur utilisateur = ContextLoader.INSTANCE.getUtilisateurManager().getUtilisateur(emprunt.getIdUtilisateur());
@@ -125,12 +125,9 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Ouvrage[] getListOuvrage(final Utilisateur pUtilisateur) {
+    public Ouvrage[] getListOuvrage(final String pseudonyme) {
 
-        if (pUtilisateur == null) {
-            logger.info(pUtilisateur.getPrenom() + " a chargé une liste d'ouvrage");
-        } else
-            logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a chargé une liste d'ouvrage");
+        logger.info(pseudonyme + " a chargé une liste d'ouvrage");
 
         List<Ouvrage> listOuvrage = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrage();
         Ouvrage[] vArrayOuvrage = listOuvrage.toArray(new Ouvrage[listOuvrage.size()]);
@@ -143,12 +140,10 @@ public class P7ServiceImpl implements P7Service {
      */
     @Override
     @WebMethod
-    public Ouvrage[] getListDispo(final Utilisateur pUtilisateur) {
+    public Ouvrage[] getListDispo(final String pseudonyme) {
 
-        if (pUtilisateur == null) {
-            logger.info("Anonymous a chargé une liste d'ouvrage disponible");
-        } else
-            logger.info(pUtilisateur.getPrenom() + " " + pUtilisateur.getNom() + " a chargé une liste d'ouvrage disponible");
+
+        logger.info(pseudonyme + " a chargé une liste d'ouvrage disponible");
 
         List<Ouvrage> listOuvrageDispo = ContextLoader.INSTANCE.getOuvrageManager().getListOuvrageDispo();
         Ouvrage[] vArrayOuvrageDispo = listOuvrageDispo.toArray(new Ouvrage[listOuvrageDispo.size()]);

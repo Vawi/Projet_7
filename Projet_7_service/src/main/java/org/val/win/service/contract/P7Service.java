@@ -19,14 +19,14 @@ public interface P7Service {
      * @return la liste des ouvrages
      */
     @WebMethod
-    Ouvrage[] getListOuvrage(final Utilisateur pUtilisateur);
+    Ouvrage[] getListOuvrage(final String pseudonyme);
 
     /**
      * Recuperer la liste des ouvrages disponible
      * @return la liste des ouvrages disponible
      */
     @WebMethod
-    Ouvrage[] getListDispo(final Utilisateur pUtilisateur);
+    Ouvrage[] getListDispo(final String pseudonyme);
 
     /**
      * Recuperer un ouvrage
@@ -74,7 +74,7 @@ public interface P7Service {
      * @param pEmprunt l'emprunt à prolonger
      */
     @WebMethod
-    void prolongationEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException;
+    void prolongationEmprunt(final Emprunt pEmprunt, final String pseudonyme) throws NotFoundException;
 
     /**
      * Fermer un emprunt

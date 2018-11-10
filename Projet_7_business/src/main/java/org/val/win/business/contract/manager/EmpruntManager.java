@@ -48,7 +48,7 @@ public interface EmpruntManager {
      * Methode servant a clore un emprunt
      * @param pEmprunt l'emprunt a clore
      */
-    void fermerEmprunt(final Emprunt pEmprunt) throws NotFoundException;
+    void fermerEmprunt(final Utilisateur pUtilisateur, final Emprunt pEmprunt) throws NotFoundException;
 
     /**
      * Methode servant a changer l'etat d'un emprunt
