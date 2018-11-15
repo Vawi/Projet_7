@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54a5ecad-2978-4dcb-b844-9d132bcdb122" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Projet_7_service/target/" />
     <ignored path="$PROJECT_DIR$/Projet_7_business/target/" />
@@ -175,13 +174,13 @@
     <session id="2120979278">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="152" />
+          <entry key="project.closed" value="153" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="9" />
           <entry key="project.open.time.11" value="17" />
           <entry key="project.open.time.12" value="13" />
           <entry key="project.open.time.13" value="18" />
-          <entry key="project.open.time.14" value="12" />
+          <entry key="project.open.time.14" value="13" />
           <entry key="project.open.time.15" value="6" />
           <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="4" />
@@ -208,7 +207,7 @@
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="9" />
-          <entry key="project.opened" value="154" />
+          <entry key="project.opened" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -278,10 +277,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2490">
+            <state relative-caret-position="393">
               <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -290,7 +289,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -465,7 +464,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="834" />
     <option name="height" value="947" />
@@ -477,6 +476,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -768,7 +768,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1153,6 +1152,7 @@
       <workItem from="1541877638108" duration="1429000" />
       <workItem from="1541962551013" duration="431000" />
       <workItem from="1542114744174" duration="1766000" />
+      <workItem from="1542133713415" duration="578000" />
     </task>
     <servers />
   </component>
@@ -1189,10 +1189,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150579000" />
+    <option name="totallyTimeSpent" value="151157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.25457877" />
       <window_info id="Structure" order="1" sideWeight="0.50102043" side_tool="true" weight="0.2930403" />
@@ -1540,16 +1540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1557,6 +1547,16 @@
             <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet_7_service/src/main/java/org/val/win/service/impl/P7ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="166" column="31" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
