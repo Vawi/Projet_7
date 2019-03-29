@@ -1,5 +1,7 @@
 #Webservice du projet 7
 
+[![CodeFactor](https://www.codefactor.io/repository/github/vawi/projet_7_webservice/badge)](https://www.codefactor.io/repository/github/vawi/projet_7_webservice)
+
 Partie service du projet 7 parcours Developpeur d'application java
 
 
